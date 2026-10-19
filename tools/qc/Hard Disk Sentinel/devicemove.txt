@@ -1,0 +1,471 @@
+04/04/2026  14:29:00.569  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+04/04/2026  14:29:01.951  Logical disk inserted   : \\?\STORAGE#Volume#{6161783c-2f76-11f1-8ffd-d017c2124e82}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/04/2026  14:29:31.442  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+04/04/2026  14:29:31.750  Logical disk removed    : \\?\STORAGE#Volume#{6161783c-2f76-11f1-8ffd-d017c2124e82}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:28:39.919  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:28:45.633  Logical disk inserted   : \\?\STORAGE#Volume#_??_SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:28:45.645  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FFA0000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:28:56.992  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#543136E70B9C7BEF&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:28:57.006  Physical device inserted: \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#543136E70B9C7BEF&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:29:11.695  Logical disk inserted   : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000E65800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:30:29.448  Logical disk inserted   : \\?\SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000002#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:30:35.209  Logical disk removed    : \\?\SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000002#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:41:09.689  Physical device removed : \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#543136E70B9C7BEF&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:41:12.303  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#543136E70B9C7BEF&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:41:12.312  Logical disk removed    : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000E65800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:41:13.296  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:41:13.679  Logical disk removed    : \\?\STORAGE#Volume#_??_SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:41:13.685  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FFA0000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:41:18.490  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:41:25.670  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:41:25.720  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:41:25.777  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:41:25.835  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  14:41:39.806  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  15:03:18.735  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  15:03:19.366  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  15:03:19.387  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  15:03:20.725  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  15:03:20.735  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+11/04/2026  15:03:21.129  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/04/2026  18:21:12.639  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/04/2026  18:21:12.829  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+13/04/2026  18:21:29.521  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/04/2026  18:21:33.305  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/04/2026  18:21:33.310  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+13/04/2026  18:21:33.632  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:39.625  Physical device removed : \\?\USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:42.403  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:42.440  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:42.482  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:42.519  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:42.554  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:42.588  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:43.626  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:43.658  Physical device inserted: \\?\USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:44.265  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:45.756  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:45.790  Physical device removed : \\?\USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:46.332  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:46.338  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:46.920  Physical device inserted: \\?\USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:47.676  Physical device removed : \\?\USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:48.429  Physical device inserted: \\?\USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:49.173  Physical device removed : \\?\USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:49.920  Physical device inserted: \\?\USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:50.713  Physical device removed : \\?\USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:51.424  Physical device inserted: \\?\USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+23/04/2026  14:38:52.131  Physical device removed : \\?\USBSTOR#Disk&Ven_&Prod_HEATZ_ZL13&Rev_1.00#012345682757&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  16:43:58.533  Physical device inserted: \\?\SCSI#Disk&Ven_VISPRO_2&Prod_.5_SATA_128GB#7&7e9efe6&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  16:44:02.968  Logical disk inserted   : \\?\STORAGE#Volume#{da94fa83-3eec-11f1-900b-d017c2124e82}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  16:44:32.420  Logical disk inserted   : \\?\STORAGE#Volume#{da94fa83-3eec-11f1-900b-d017c2124e82}#0000000007500000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  16:44:38.338  Physical device removed : \\?\SCSI#Disk&Ven_VISPRO_2&Prod_.5_SATA_128GB#7&7e9efe6&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  16:44:38.655  Logical disk removed    : \\?\STORAGE#Volume#{da94fa83-3eec-11f1-900b-d017c2124e82}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  16:44:38.663  Logical disk removed    : \\?\STORAGE#Volume#{da94fa83-3eec-11f1-900b-d017c2124e82}#0000000007500000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:00:17.018  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:00:21.930  Logical disk inserted   : \\?\STORAGE#Volume#_??_SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:00:21.981  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FFA0000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:00:25.777  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:00:26.162  Logical disk removed    : \\?\STORAGE#Volume#_??_SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:00:26.168  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FFA0000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:05:32.564  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:05:33.325  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:05:33.348  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:05:49.235  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:05:49.511  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:05:49.518  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:06:43.926  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:06:50.964  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:06:51.017  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:06:51.072  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:06:51.183  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:07:06.999  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:07:19.777  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:07:19.814  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:07:20.778  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:07:20.784  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:07:21.076  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:07:22.101  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:08:17.588  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:08:24.390  Logical disk inserted   : \\?\STORAGE#Volume#_??_SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:08:24.421  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FFA0000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:08:25.323  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:08:25.716  Logical disk removed    : \\?\STORAGE#Volume#_??_SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+25/04/2026  17:08:26.629  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FFA0000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:48:40.353  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:48:57.550  Logical disk inserted   : \\?\STORAGE#Volume#_??_SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:48:57.598  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FFA0000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:51:13.915  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:51:14.374  Logical disk removed    : \\?\STORAGE#Volume#_??_SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:51:14.379  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FFA0000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:54:22.048  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:54:22.662  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:54:22.679  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:55:07.101  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:55:07.175  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:55:07.237  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:55:13.507  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:55:13.581  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:55:13.588  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:55:40.878  Logical disk inserted   : \\?\SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000003#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  15:55:50.871  Logical disk removed    : \\?\SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000003#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  16:25:12.125  Physical device inserted: \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#5412483D03812DEA&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  16:25:15.290  Logical disk inserted   : \\?\STORAGE#Volume#{5903bd50-470c-11f1-900b-d017c2124e82}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  16:29:32.323  Physical device removed : \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#5412483D03812DEA&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  16:29:33.039  Logical disk removed    : \\?\STORAGE#Volume#{5903bd50-470c-11f1-900b-d017c2124e82}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  16:55:34.402  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  16:55:34.772  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+04/05/2026  16:55:34.778  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:13:03.601  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:13:03.686  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:13:06.547  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:13:26.819  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:13:26.895  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:13:26.940  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:13:33.187  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:13:33.271  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:13:33.278  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:19:03.115  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:19:20.435  Logical disk inserted   : \\?\STORAGE#Volume#_??_SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:19:21.925  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FFA0000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:19:59.001  Logical disk removed    : \\?\STORAGE#Volume#_??_SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:20:01.365  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FFA0000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:20:02.703  Logical disk inserted   : \\?\STORAGE#Volume#_??_SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:20:04.301  Logical disk removed    : \\?\STORAGE#Volume#_??_SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:20:06.057  Logical disk inserted   : \\?\STORAGE#Volume#_??_SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:20:08.122  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FFA0000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:35:10.389  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:35:19.569  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:35:20.982  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:35:22.234  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:35:22.906  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:35:23.886  Logical disk removed    : \\?\STORAGE#Volume#_??_SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:35:24.540  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FFA0000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:35:30.763  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  17:35:38.166  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  18:29:48.895  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  18:29:49.391  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+11/05/2026  18:29:49.396  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:19:17.080  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:19:20.043  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:19:20.053  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA4400000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:19:22.592  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:19:22.613  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:19:23.410  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:20:14.611  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:20:14.766  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA4400000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:20:14.847  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:20:15.119  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:20:15.191  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:20:31.577  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:20:32.257  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E51800000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:20:32.633  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:20:32.868  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:20:33.106  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:21:16.952  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:21:17.714  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:21:18.677  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:21:53.856  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:21:53.957  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  12:21:54.082  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E517FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  13:07:34.149  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  13:07:34.723  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  13:07:34.737  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E517FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  13:07:35.649  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  13:07:35.655  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  13:07:35.933  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:12:17.841  Physical device inserted: \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#5412483D03812DEA&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:12:18.857  Logical disk inserted   : \\?\STORAGE#Volume#{5903bd50-470c-11f1-900b-d017c2124e82}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:17:47.033  Physical device removed : \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#5412483D03812DEA&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:17:47.819  Logical disk removed    : \\?\STORAGE#Volume#{5903bd50-470c-11f1-900b-d017c2124e82}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:32.960  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#00014508120525082011&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:35.884  Logical disk inserted   : \\?\STORAGE#Volume#{eb9f333f-4dae-11f1-900c-d017c2124e82}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:35.899  Logical disk inserted   : \\?\STORAGE#Volume#{eb9f333f-4dae-11f1-900c-d017c2124e82}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:35.951  Logical disk removed    : \\?\STORAGE#Volume#{eb9f333f-4dae-11f1-900c-d017c2124e82}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:36.002  Logical disk removed    : \\?\STORAGE#Volume#{eb9f333f-4dae-11f1-900c-d017c2124e82}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:37.817  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#00014508120525082011&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:47.084  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:47.754  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:47.773  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:49.893  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:49.903  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:50.309  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:53.825  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:55.278  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:34:55.316  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:36:11.247  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:36:35.914  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:36:35.967  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:36:36.254  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:57:17.971  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:57:18.344  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+13/05/2026  16:57:18.349  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+21/05/2026  18:29:55.973  Logical disk inserted   : \\?\SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000002#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+22/05/2026  10:59:29.323  Logical disk removed    : \\?\SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000002#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+22/05/2026  10:59:47.309  Logical disk inserted   : \\?\SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000003#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:38.116  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:38.825  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:38.840  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E517FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:40.978  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:41.321  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:41.326  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E517FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:44.665  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:45.425  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:45.447  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:46.615  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:47.039  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:47.047  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:50.104  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:58.741  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:20:58.756  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:08.578  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:08.890  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:08.895  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:15.406  Physical device inserted: \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#543136E70B9C7BEF&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:15.878  Logical disk inserted   : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:15.883  Logical disk inserted   : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000E657FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:15.894  Logical disk removed    : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:15.904  Logical disk removed    : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000E657FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:16.550  Physical device removed : \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#543136E70B9C7BEF&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:17.167  Logical disk inserted   : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:17.187  Logical disk inserted   : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000E657FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:18.371  Physical device inserted: \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#543136E70B9C7BEF&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:19.858  Logical disk removed    : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:19.864  Physical device removed : \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#543136E70B9C7BEF&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:20.121  Logical disk removed    : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000E657FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:22.421  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:23.116  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:23.133  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E517FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:30.469  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:31.433  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:21:31.469  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:22:03.206  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:22:10.626  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E517FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:22:10.676  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:22:10.871  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E517FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:23:45.305  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:23:56.031  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:23:56.115  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  10:23:56.400  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:20:45.307  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:20:48.144  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:20:48.149  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E517FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:20:48.159  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:20:48.171  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:20:48.942  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:20:52.046  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:21:02.654  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:21:02.666  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:25:15.711  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:25:16.032  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:25:16.041  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:44:02.721  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:44:03.245  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:44:03.268  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:44:41.540  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:44:41.775  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:44:41.781  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:45:12.812  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:45:14.324  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:45:14.331  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:45:15.164  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:45:15.761  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:45:15.773  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:45:23.086  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:45:37.687  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:45:37.698  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:46:05.685  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:46:05.949  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:46:05.955  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:46:24.481  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:46:24.997  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:46:25.015  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:47:02.184  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:47:02.443  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:47:02.448  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:47:46.689  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:47:47.274  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:47:47.285  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:52:56.068  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:52:56.348  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:52:56.355  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:52:57.192  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:52:57.199  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:52:57.511  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:52:57.517  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:52:57.530  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:52:58.085  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:53:59.195  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:54:00.741  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:54:03.066  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:54:03.747  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:54:03.769  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:54:09.777  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:54:10.616  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:54:10.648  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:54:39.693  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:54:47.295  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:54:47.318  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:54:47.541  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:55:46.780  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:55:56.191  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:55:56.258  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  11:55:56.426  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  13:58:38.329  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  13:58:38.840  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  13:58:38.850  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  14:00:16.069  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  14:00:16.308  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  14:00:16.313  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  14:00:45.176  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  14:00:45.714  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  14:00:45.730  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  14:01:25.778  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  14:01:36.088  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  14:01:36.129  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  14:01:36.437  Logical disk inserted   : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  14:16:21.375  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#040115dfde02216ee075ef34f26903df6042a156a6daa1c7de9738d7a7e5816#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  14:16:21.676  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+29/05/2026  14:16:21.681  Logical disk removed    : \\?\STORAGE#Volume#{12728f55-2a56-11f1-8ff9-ccbabdb455b3}#0000001CA43FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+31/05/2026  13:48:50.945  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+31/05/2026  13:48:51.038  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+31/05/2026  13:48:56.530  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+31/05/2026  13:48:58.587  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+31/05/2026  13:48:58.591  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+31/05/2026  13:48:58.835  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  10:47:39.411  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  10:47:42.902  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  10:47:42.924  Logical disk inserted   : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E517FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  10:48:46.444  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0901641ffb9cfa3f1feb695e4dc071171cda8b92e7c6f13257ebe4ddda69766#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  10:48:46.700  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  10:48:46.706  Logical disk removed    : \\?\STORAGE#Volume#{0d78fa95-20fe-11f1-8fe5-806e6f6e6963}#0000000E517FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:03:13.449  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:03:27.063  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:03:27.095  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:03:31.199  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:03:31.505  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:03:31.510  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:03:34.116  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:03:42.850  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:03:42.871  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:04:48.856  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:04:49.118  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:04:49.124  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:11.446  Physical device inserted: \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#543136E70B9C7BEF&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:12.173  Logical disk inserted   : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:12.190  Logical disk inserted   : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000E657FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:14.472  Logical disk removed    : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:14.483  Physical device removed : \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#543136E70B9C7BEF&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:14.905  Logical disk removed    : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000E657FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:14.915  Logical disk inserted   : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:14.928  Logical disk inserted   : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000E657FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:14.938  Logical disk removed    : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:14.950  Logical disk removed    : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000E657FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:14.960  Logical disk inserted   : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:14.972  Logical disk inserted   : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000E657FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:15.928  Physical device inserted: \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#543136E70B9C7BEF&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:17.364  Physical device removed : \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#543136E70B9C7BEF&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:17.813  Logical disk removed    : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:17.819  Logical disk removed    : \\?\STORAGE#Volume#{a9cbc703-2744-11f1-8ff3-184f32d2853a}#0000000E657FB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:18.798  Physical device inserted: \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#543136E70B9C7BEF&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:05:20.098  Physical device removed : \\?\USBSTOR#Disk&Ven_Lexar&Prod_USB_Flash_Drive&Rev_3.00#543136E70B9C7BEF&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:36:40.123  Physical device inserted: \\?\USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:36:40.738  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:37:49.191  Physical device removed : \\?\USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:37:49.457  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:37:53.029  Physical device inserted: \\?\USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:37:53.575  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:43:43.232  Logical disk inserted   : \\?\SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000001#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:43:51.780  Physical device removed : \\?\USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:43:52.069  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+03/06/2026  11:43:52.074  Logical disk removed    : \\?\SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000001#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  10:14:07.310  Physical device inserted: \\?\SCSI#Disk&Ven_MTFDDAK2&Prod_56TDL-1AW1ZABHA#7&7e9efe6&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  10:14:12.407  Logical disk inserted   : \\?\STORAGE#Volume#{ce8ed299-60c3-11f1-9016-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  10:14:12.421  Logical disk inserted   : \\?\STORAGE#Volume#{ce8ed299-60c3-11f1-9016-ccbabdb455b3}#0000000007500000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  10:14:12.434  Logical disk inserted   : \\?\STORAGE#Volume#{ce8ed299-60c3-11f1-9016-ccbabdb455b3}#000000227BE08000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  10:14:12.448  Logical disk inserted   : \\?\STORAGE#Volume#{ce8ed299-60c3-11f1-9016-ccbabdb455b3}#0000003B7E000000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  10:19:00.926  Physical device removed : \\?\SCSI#Disk&Ven_MTFDDAK2&Prod_56TDL-1AW1ZABHA#7&7e9efe6&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  10:19:01.402  Logical disk removed    : \\?\STORAGE#Volume#{ce8ed299-60c3-11f1-9016-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  10:19:01.409  Logical disk removed    : \\?\STORAGE#Volume#{ce8ed299-60c3-11f1-9016-ccbabdb455b3}#0000000007500000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  10:19:01.416  Logical disk removed    : \\?\STORAGE#Volume#{ce8ed299-60c3-11f1-9016-ccbabdb455b3}#000000227BE08000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  10:19:01.426  Logical disk removed    : \\?\STORAGE#Volume#{ce8ed299-60c3-11f1-9016-ccbabdb455b3}#0000003B7E000000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  12:03:29.912  Physical device inserted: \\?\USBSTOR#Disk&Ven_Realtek&Prod_RTL9201&Rev_1.02#012345678994&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  12:53:24.099  Physical device removed : \\?\USBSTOR#Disk&Ven_Realtek&Prod_RTL9201&Rev_1.02#012345678994&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  19:47:53.020  Physical device inserted: \\?\USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  19:47:53.632  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  19:50:22.880  Physical device removed : \\?\USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  19:50:26.055  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  19:50:26.071  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  19:50:28.149  Physical device inserted: \\?\USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  19:50:33.718  Physical device removed : \\?\USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  19:50:33.955  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  19:50:35.787  Physical device inserted: \\?\USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  19:50:36.263  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  20:02:32.542  Physical device removed : \\?\USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+06/06/2026  20:02:33.642  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+10/06/2026  13:36:04.772  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+10/06/2026  13:36:14.205  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+10/06/2026  13:36:14.257  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+10/06/2026  13:37:05.593  Logical disk inserted   : \\?\SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000001#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+10/06/2026  16:12:44.735  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+10/06/2026  16:12:44.780  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+10/06/2026  16:12:45.402  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+10/06/2026  16:12:45.409  Logical disk removed    : \\?\SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000001#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+10/06/2026  16:12:50.445  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+10/06/2026  16:12:57.068  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+10/06/2026  16:12:57.078  Logical disk inserted   : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+10/06/2026  16:13:01.025  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&1e387c00&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+10/06/2026  16:13:01.308  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+10/06/2026  16:13:01.315  Logical disk removed    : \\?\STORAGE#Volume#{7cf9ad2c-210e-11f1-8feb-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+15/06/2026  15:47:44.885  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+15/06/2026  15:47:46.499  Logical disk inserted   : \\?\STORAGE#Volume#{e9301f3a-535d-11f1-9011-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+15/06/2026  15:48:03.646  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+15/06/2026  15:48:03.903  Logical disk removed    : \\?\STORAGE#Volume#{e9301f3a-535d-11f1-9011-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+15/06/2026  16:08:23.821  Logical disk inserted   : \\?\STORAGE#Volume#{e9301f3a-535d-11f1-9011-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+15/06/2026  16:08:24.019  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+15/06/2026  16:09:10.676  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+15/06/2026  16:09:10.926  Logical disk removed    : \\?\STORAGE#Volume#{e9301f3a-535d-11f1-9011-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+16/06/2026  10:09:04.936  Logical disk inserted   : \\?\STORAGE#Volume#{e9301f3a-535d-11f1-9011-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+16/06/2026  10:09:04.957  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+16/06/2026  10:25:45.592  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+16/06/2026  10:25:46.550  Logical disk removed    : \\?\STORAGE#Volume#{e9301f3a-535d-11f1-9011-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+18/06/2026  19:59:27.966  Physical device inserted: \\?\USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+18/06/2026  19:59:29.167  Logical disk inserted   : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+18/06/2026  20:02:32.088  Physical device removed : \\?\USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+18/06/2026  20:02:33.020  Logical disk removed    : \\?\STORAGE#Volume#_??_USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#03027806102023203248&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+19/06/2026  10:40:49.788  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+19/06/2026  10:40:58.716  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+19/06/2026  10:40:58.729  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+19/06/2026  10:41:53.159  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+19/06/2026  10:41:53.476  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+19/06/2026  10:41:53.484  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+19/06/2026  11:21:10.846  Physical device inserted: \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+19/06/2026  11:21:32.814  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+19/06/2026  11:21:32.828  Logical disk inserted   : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+19/06/2026  11:21:57.375  Physical device removed : \\?\SCSI#Disk&Ven__USB&Prod__SanDisk_3.2Gen1#7&14711b98&0&000000#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+19/06/2026  11:21:58.176  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+19/06/2026  11:21:58.184  Logical disk removed    : \\?\STORAGE#Volume#{4c31fcb8-21d5-11f1-8fec-184f32d2853a}#0000000E4FF9B000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+02/09/2026  09:51:18.128  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+02/09/2026  09:51:22.399  Logical disk inserted   : \\?\STORAGE#Volume#{e9301f3a-535d-11f1-9011-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+02/09/2026  09:51:22.408  Logical disk inserted   : \\?\STORAGE#Volume#{e9301f3a-535d-11f1-9011-ccbabdb455b3}#0000001CA4FFB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+02/09/2026  10:22:27.967  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+02/09/2026  10:22:38.727  Logical disk inserted   : \\?\STORAGE#Volume#{e9301f3a-535d-11f1-9011-ccbabdb455b3}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+02/09/2026  10:22:38.805  Logical disk inserted   : \\?\STORAGE#Volume#{e9301f3a-535d-11f1-9011-ccbabdb455b3}#0000001CA4FFB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:02.588  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:03.291  Logical disk inserted   : \\?\STORAGE#Volume#{37d13f32-ca9e-11f1-b377-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:03.302  Logical disk inserted   : \\?\STORAGE#Volume#{37d13f32-ca9e-11f1-b377-806e6f6e6963}#0000001CA4FFB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:04.210  Logical disk removed    : \\?\STORAGE#Volume#{37d13f32-ca9e-11f1-b377-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:04.216  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:04.778  Logical disk removed    : \\?\STORAGE#Volume#{37d13f32-ca9e-11f1-b377-806e6f6e6963}#0000001CA4FFB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:09.247  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:09.959  Logical disk inserted   : \\?\STORAGE#Volume#{37d13f32-ca9e-11f1-b377-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:09.977  Logical disk inserted   : \\?\STORAGE#Volume#{37d13f32-ca9e-11f1-b377-806e6f6e6963}#0000001CA4FFB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:10.816  Logical disk removed    : \\?\STORAGE#Volume#{37d13f32-ca9e-11f1-b377-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:10.825  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:11.289  Logical disk removed    : \\?\STORAGE#Volume#{37d13f32-ca9e-11f1-b377-806e6f6e6963}#0000001CA4FFB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:19.441  Physical device inserted: \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:20.172  Logical disk inserted   : \\?\STORAGE#Volume#{37d13f32-ca9e-11f1-b377-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:20.184  Logical disk inserted   : \\?\STORAGE#Volume#{37d13f32-ca9e-11f1-b377-806e6f6e6963}#0000001CA4FFB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:20.886  Logical disk removed    : \\?\STORAGE#Volume#{37d13f32-ca9e-11f1-b377-806e6f6e6963}#0000000000100000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:20.892  Physical device removed : \\?\USBSTOR#Disk&Ven__USB&Prod__SanDisk_3.2Gen1&Rev_1.00#0101e16e57d5c16bfd4c3743e4390deae8c26a1a173512330f792e36d4fceab#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+18/10/2026  20:03:21.418  Logical disk removed    : \\?\STORAGE#Volume#{37d13f32-ca9e-11f1-b377-806e6f6e6963}#0000001CA4FFB000#{53f5630d-b6bf-11d0-94f2-00a0c91efb8b}
