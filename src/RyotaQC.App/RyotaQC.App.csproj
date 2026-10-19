@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.8" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.142" />
+    <PackageReference Include="QuestPDF" Version="2025.7.4" />
+    <PackageReference Include="System.Management" Version="10.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Images\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Update="Config\*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\Images\Tiles\logo.ico</ApplicationIcon>
+    <Company>RyotaQC</Company>
+    <Authors>RyotaQC</Authors>
+    <Product>RyotaQC V5</Product>
+    <AssemblyTitle>RyotaQC V5</AssemblyTitle>
+    <Copyright>Copyright © RyotaQC</Copyright>
+    <Version>5.1.0</Version>
+    <FileVersion>5.1.0.0</FileVersion>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <ServerGarbageCollection>false</ServerGarbageCollection>
+    <TieredCompilation>true</TieredCompilation>
+    <TieredPGO>true</TieredPGO>
+  </PropertyGroup>
+</Project>

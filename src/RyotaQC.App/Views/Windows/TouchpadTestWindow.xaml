@@ -1,0 +1,145 @@
+<Window x:Class="RyotaQC.App.Views.Windows.TouchpadTestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Touchpad Test"
+        WindowState="Maximized"
+        WindowStyle="None"
+        WindowStartupLocation="CenterOwner"
+        Background="#050812">
+    <Grid Margin="14">
+        <Border Style="{StaticResource ShellBorderStyle}" Margin="0" Padding="16">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackPanel>
+                    <TextBlock Text="Touchpad Test" Style="{StaticResource CardTitleTextStyle}" />
+                    <TextBlock Text="Uji klik kiri, klik kanan, scroll, dan pergerakan touchpad pada area test di bawah."
+                               Margin="0,6,0,0"
+                               TextWrapping="Wrap"
+                               Foreground="{DynamicResource TextMutedBrush}"
+                               FontFamily="Bahnschrift"
+                               FontSize="15" />
+                </StackPanel>
+
+                <Border Grid.Row="1"
+                        Margin="0,14,0,0"
+                        CornerRadius="14"
+                        BorderThickness="1"
+                        BorderBrush="{DynamicResource BorderBrushNeon}"
+                        Background="{StaticResource Ps5GlassBrush}">
+                    <Grid x:Name="TestSurface"
+                          Background="Transparent"
+                          MouseMove="TestSurface_OnMouseMove"
+                          MouseLeftButtonDown="TestSurface_OnMouseLeftButtonDown"
+                          MouseRightButtonDown="TestSurface_OnMouseRightButtonDown"
+                          PreviewMouseDown="TestSurface_OnPreviewMouseDown"
+                          MouseWheel="TestSurface_OnMouseWheel">
+                        <Canvas x:Name="TrailCanvas" IsHitTestVisible="False" />
+
+                        <TextBlock x:Name="HintText"
+                                   Text="Gerakkan touchpad atau klik area ini"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="#CCB4D2EA"
+                                   FontFamily="Bahnschrift SemiBold"
+                                   FontSize="26"
+                                   IsHitTestVisible="False" />
+                    </Grid>
+                </Border>
+
+                <Grid Grid.Row="2" Margin="0,12,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Klik Kiri: "
+                                       FontFamily="Bahnschrift SemiBold"
+                                       Foreground="{DynamicResource TextPrimaryBrush}"
+                                       FontSize="15" />
+                            <TextBlock x:Name="LeftClickText"
+                                       Text="0"
+                                       FontFamily="Bahnschrift SemiBold"
+                                       Foreground="{DynamicResource NeonBlueBrush}"
+                                       FontSize="15" />
+                            <TextBlock Text="   Klik Kanan: "
+                                       FontFamily="Bahnschrift SemiBold"
+                                       Foreground="{DynamicResource TextPrimaryBrush}"
+                                       FontSize="15" />
+                            <TextBlock x:Name="RightClickText"
+                                       Text="0"
+                                       FontFamily="Bahnschrift SemiBold"
+                                       Foreground="{DynamicResource NeonBlueBrush}"
+                                       FontSize="15" />
+                            <TextBlock Text="   Scroll: "
+                                       FontFamily="Bahnschrift SemiBold"
+                                       Foreground="{DynamicResource TextPrimaryBrush}"
+                                       FontSize="15" />
+                            <TextBlock x:Name="ScrollText"
+                                       Text="0"
+                                       FontFamily="Bahnschrift SemiBold"
+                                       Foreground="{DynamicResource NeonBlueBrush}"
+                                       FontSize="15" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                            <TextBlock Text="Pergerakan: "
+                                       FontFamily="Bahnschrift SemiBold"
+                                       Foreground="{DynamicResource TextPrimaryBrush}"
+                                       FontSize="15" />
+                            <TextBlock x:Name="MoveDistanceText"
+                                       Text="0 px"
+                                       FontFamily="Bahnschrift SemiBold"
+                                       Foreground="{DynamicResource NeonBlueBrush}"
+                                       FontSize="15" />
+                            <TextBlock Text="   Sensitivitas: "
+                                       FontFamily="Bahnschrift SemiBold"
+                                       Foreground="{DynamicResource TextPrimaryBrush}"
+                                       FontSize="15"
+                                       Margin="18,0,6,0" />
+                            <Slider x:Name="SensitivitySlider"
+                                    Width="160"
+                                    Minimum="1"
+                                    Maximum="10"
+                                    Value="5"
+                                    TickFrequency="1"
+                                    IsSnapToTickEnabled="True" />
+                            <TextBlock x:Name="SensitivityText"
+                                       Margin="8,0,0,0"
+                                       VerticalAlignment="Center"
+                                       Text="5/10"
+                                       FontFamily="Bahnschrift SemiBold"
+                                       Foreground="{DynamicResource NeonBlueBrush}"
+                                       FontSize="15" />
+                        </StackPanel>
+
+                        <TextBlock x:Name="ResultStatusText"
+                                   Margin="0,8,0,0"
+                                   FontFamily="Bahnschrift SemiBold"
+                                   FontSize="14"
+                                   Foreground="#FFD3EBFF"
+                                   Text="Status: lakukan gerak, klik kiri, klik kanan, dan scroll untuk validasi touchpad." />
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="12,0,0,0">
+                        <Button Content="Clear"
+                                Width="100"
+                                Style="{StaticResource RoundedActionButtonStyle}"
+                                Margin="0,0,8,0"
+                                Click="Clear_OnClick" />
+                        <Button Content="Close"
+                                Width="100"
+                                Style="{StaticResource RoundedActionButtonStyle}"
+                                Click="Close_OnClick" />
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

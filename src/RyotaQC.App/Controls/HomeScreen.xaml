@@ -1,0 +1,321 @@
+<UserControl x:Class="RyotaQC.App.Controls.HomeScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:c="clr-namespace:RyotaQC.App.Controls"
+             xmlns:conv="clr-namespace:RyotaQC.App.Converters"
+             x:Name="Root"
+             Background="Transparent"
+             PreviewKeyDown="Root_OnPreviewKeyDown"
+             Loaded="Root_OnLoaded">
+    <UserControl.Resources>
+        <conv:ImagePathConverter x:Key="ImagePathConverter" />
+    </UserControl.Resources>
+    <Grid Background="#050812" ClipToBounds="True">
+        <!-- Background wallpaper layer -->
+        <Image x:Name="WallpaperImage"
+               Stretch="UniformToFill"
+               RenderOptions.BitmapScalingMode="LowQuality"
+               IsHitTestVisible="False" />
+
+        <!-- Left-to-right dark gradient overlay -->
+        <Grid IsHitTestVisible="False">
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#F5050812" Offset="0" />
+                    <GradientStop Color="#D9050812" Offset="0.42" />
+                    <GradientStop Color="#99050812" Offset="0.62" />
+                    <GradientStop Color="#33050812" Offset="0.82" />
+                    <GradientStop Color="#001D080C" Offset="1" />
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+
+        <!-- Top & bottom subtle shades -->
+        <Grid IsHitTestVisible="False">
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#99050812" Offset="0" />
+                    <GradientStop Color="#00050812" Offset="0.22" />
+                    <GradientStop Color="#00050812" Offset="0.7" />
+                    <GradientStop Color="#99050812" Offset="1" />
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+
+        <Grid Margin="54,32,54,44">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- TOP BAR -->
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="Main"
+                               Foreground="#FFFFFF"
+                               FontFamily="Segoe UI"
+                               FontSize="22"
+                               FontWeight="Bold"
+                               VerticalAlignment="Center" />
+                    <TextBlock Text="Tools"
+                               Margin="30,0,0,0"
+                               Foreground="#7E879A"
+                               FontFamily="Segoe UI"
+                               FontSize="22"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                    <Button Command="{Binding OpenSearchCommand}"
+                            Style="{StaticResource HomeNavButtonStyle}"
+                            Content="&#xE721;"
+                            ToolTip="Search" />
+                    <Button Command="{Binding OpenSettingsCommand}"
+                            Style="{StaticResource HomeNavButtonStyle}"
+                            Content="&#xE713;"
+                            ToolTip="Settings" />
+                    <Border Width="42"
+                            Height="42"
+                            CornerRadius="21"
+                            Background="#33263A5E"
+                            BorderBrush="White"
+                            BorderThickness="1.5"
+                            Margin="12,0,0,0"
+                            VerticalAlignment="Center">
+                        <TextBlock Text="{Binding CurrentUserName}"
+                                   Foreground="#F6F8FF"
+                                   FontFamily="Segoe UI"
+                                   FontSize="13"
+                                   FontWeight="SemiBold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center" />
+                    </Border>
+                    <TextBlock Text="{Binding ClockText}"
+                               Margin="18,0,0,0"
+                               Foreground="#F6F8FF"
+                               FontFamily="Segoe UI"
+                               FontSize="22"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center" />
+
+                    <Border Width="1"
+                            Height="28"
+                            Background="#33FFFFFF"
+                            Margin="18,0,0,0"
+                            VerticalAlignment="Center" />
+
+                    <Button Style="{StaticResource HomeWindowButtonStyle}"
+                            Content="&#xE921;"
+                            ToolTip="Minimize"
+                            Click="Minimize_OnClick" />
+                    <Button x:Name="MaximizeButton"
+                            Style="{StaticResource HomeWindowButtonStyle}"
+                            Content="&#xE922;"
+                            ToolTip="Maximize"
+                            Click="Maximize_OnClick" />
+                    <Button Style="{StaticResource HomeWindowButtonStyle}"
+                            Content="&#xE8BB;"
+                            ToolTip="Close"
+                            Click="Close_OnClick" />
+                </StackPanel>
+            </Grid>
+
+            <!-- TILE ROW (selected centered, with arrows) -->
+            <Grid Grid.Row="1"
+                  VerticalAlignment="Top"
+                  Margin="0,12,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0"
+                        Command="{Binding NavLeftCommand}"
+                        Style="{StaticResource HomeArrowButtonStyle}"
+                        Content="&#xE76B;"
+                        VerticalAlignment="Center" />
+
+                <ScrollViewer x:Name="TileScroller"
+                              Grid.Column="1"
+                              VerticalAlignment="Top"
+                              HorizontalScrollBarVisibility="Hidden"
+                              VerticalScrollBarVisibility="Disabled"
+                              HorizontalContentAlignment="Center"
+                              Focusable="False">
+                    <ItemsControl x:Name="TileItems"
+                                  ItemsSource="{Binding Menus}"
+                                  VerticalAlignment="Top"
+                                  HorizontalAlignment="Center"
+                                  Margin="40,20,40,0">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Horizontal" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <c:HomeTile ImageSource="{Binding ImagePath, Converter={StaticResource ImagePathConverter}}"
+                                            IsSelected="{Binding IsSelected}"
+                                            IsBlocked="{Binding IsBlocked}"
+                                            SelectCommand="{Binding DataContext.SelectMenuCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                            SelectCommandParameter="{Binding}"
+                                            OpenCommand="{Binding DataContext.OpenMenuCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                            OpenCommandParameter="{Binding}"
+                                            Margin="9,0,9,0"
+                                            VerticalAlignment="Top" />
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+
+                <Button Grid.Column="2"
+                        Command="{Binding NavRightCommand}"
+                        Style="{StaticResource HomeArrowButtonStyle}"
+                        Content="&#xE76C;"
+                        VerticalAlignment="Center" />
+            </Grid>
+
+            <!-- Selected menu name under tile row -->
+            <TextBlock Grid.Row="2"
+                       Margin="0,18,0,0"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       Text="{Binding SelectedMenu.Title}"
+                       Foreground="#FFFFFF"
+                       FontFamily="Segoe UI"
+                       FontSize="18"
+                       FontWeight="SemiBold" />
+
+            <!-- BOTTOM-LEFT HERO -->
+            <Grid Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                <StackPanel Width="620">
+                    <TextBlock Text="{Binding SelectedMenu.Title}"
+                               Foreground="#FFFFFF"
+                               FontFamily="Segoe UI"
+                               FontSize="54"
+                               FontWeight="Bold"
+                               TextWrapping="Wrap" />
+                    <TextBlock Text="{Binding SelectedMenu.Subtitle}"
+                               Margin="0,12,0,0"
+                               Foreground="#AEB7CA"
+                               FontFamily="Segoe UI"
+                               FontSize="20"
+                               FontWeight="SemiBold" />
+                    <TextBlock Text="{Binding SelectedMenu.Description}"
+                               Margin="0,14,0,0"
+                               Foreground="#AEB7CA"
+                               FontFamily="Segoe UI"
+                               FontSize="16"
+                               MaxWidth="560"
+                               TextWrapping="Wrap" />
+
+                    <StackPanel Orientation="Horizontal" Margin="0,30,0,0">
+                        <Button Content="{Binding SelectedMenu.Title, StringFormat=Open {0}}"
+                                Command="{Binding OpenSelectedCommand}"
+                                Style="{StaticResource HomePrimaryButtonStyle}" />
+                        <Button Content="•••"
+                                Command="{Binding OpenSelectedCommand}"
+                                Style="{StaticResource HomeDotsButtonStyle}"
+                                Margin="14,0,0,0" />
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+
+            <!-- RIGHT INFO PANEL: System Model / Serial Number / Instagram -->
+            <StackPanel Grid.Row="3"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Bottom"
+                        Width="300"
+                        Margin="0,0,0,4">
+                <Border CornerRadius="18"
+                        Background="#BA121625"
+                        BorderBrush="#22FFFFFF"
+                        BorderThickness="1"
+                        Padding="20,18">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,16">
+                            <TextBlock Text="System Model"
+                                       Foreground="#AEB7CA"
+                                       FontFamily="Segoe UI"
+                                       FontSize="14"
+                                       FontWeight="SemiBold"
+                                       VerticalAlignment="Center" />
+                            <Border Height="1"
+                                    Background="#22FFFFFF"
+                                    VerticalAlignment="Center"
+                                    Margin="12,0,0,0" />
+                        </StackPanel>
+                        <TextBlock Text="{Binding SystemModel}"
+                                   Foreground="#F6F8FF"
+                                   FontFamily="Segoe UI"
+                                   FontSize="22"
+                                   FontWeight="Bold"
+                                   TextWrapping="Wrap"
+                                   Margin="0,2,0,18" />
+
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,16">
+                            <TextBlock Text="Serial Number"
+                                       Foreground="#AEB7CA"
+                                       FontFamily="Segoe UI"
+                                       FontSize="14"
+                                       FontWeight="SemiBold"
+                                       VerticalAlignment="Center" />
+                            <Border Height="1"
+                                    Background="#22FFFFFF"
+                                    VerticalAlignment="Center"
+                                    Margin="12,0,0,0" />
+                        </StackPanel>
+                        <TextBlock Text="{Binding SerialNumber}"
+                                   Foreground="#F6F8FF"
+                                   FontFamily="Segoe UI"
+                                   FontSize="22"
+                                   FontWeight="Bold"
+                                   TextWrapping="Wrap"
+                                   Margin="0,2,0,16" />
+
+                        <Button Command="{Binding OpenInstagramCommand}"
+                                Style="{StaticResource HomeLinkButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <Border Width="26"
+                                        Height="26"
+                                        CornerRadius="13"
+                                        VerticalAlignment="Center">
+                                    <Border.Background>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                            <GradientStop Color="#FFFCAF45" Offset="0" />
+                                            <GradientStop Color="#FFD9455F" Offset="0.5" />
+                                            <GradientStop Color="#FF8A3AB9" Offset="1" />
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <TextBlock Text="&#xE722;"
+                                               FontFamily="Segoe MDL2 Assets"
+                                               FontSize="13"
+                                               Foreground="White"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center" />
+                                </Border>
+                                <TextBlock Text="{Binding InstagramName}"
+                                           Margin="10,0,0,0"
+                                           Foreground="#F6F8FF"
+                                           FontFamily="Segoe UI"
+                                           FontSize="15"
+                                           FontWeight="SemiBold"
+                                           VerticalAlignment="Center" />
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

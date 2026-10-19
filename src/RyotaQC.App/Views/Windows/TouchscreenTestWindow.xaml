@@ -1,0 +1,38 @@
+﻿<Window x:Class="RyotaQC.App.Views.Windows.TouchscreenTestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Touchscreen Test"
+        WindowState="Maximized"
+        WindowStyle="None"
+        WindowStartupLocation="CenterOwner"
+        Background="#050812"
+        KeyDown="Window_OnKeyDown">
+    <Grid>
+        <!-- Full screen grid of test boxes — no title, no text, no buttons -->
+        <Grid x:Name="TestGridContainer" Margin="2" />
+
+        <!-- "Test Done Bang Aman" overlay -->
+        <Border x:Name="DoneOverlay"
+                Background="#CC050812"
+                Visibility="Collapsed">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Border Width="80" Height="80" CornerRadius="40" Background="#FF1E7A4B" BorderBrush="#5539C86B" BorderThickness="2">
+                    <TextBlock Text="&#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="36" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Border>
+                <TextBlock Text="Test Done Bang Aman!"
+                           Foreground="#39C86B"
+                           FontFamily="Segoe UI"
+                           FontSize="32"
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center"
+                           Margin="0,16,0,0" />
+                <TextBlock Text="Auto close dalam 3 detik... (atau tekan ESC)"
+                           Foreground="#AEB7CA"
+                           FontFamily="Segoe UI"
+                           FontSize="16"
+                           HorizontalAlignment="Center"
+                           Margin="0,8,0,0" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

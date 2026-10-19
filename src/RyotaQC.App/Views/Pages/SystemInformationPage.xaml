@@ -1,0 +1,662 @@
+﻿<Page x:Class="RyotaQC.App.Views.Pages.SystemInformationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:conv="clr-namespace:RyotaQC.App.Converters"
+      mc:Ignorable="d"
+      Background="Transparent">
+    <Page.Resources>
+        <conv:ZeroToVisibilityConverter x:Key="ZeroToVisibilityConverter" />
+        <conv:InverseBooleanToVisibilityConverter x:Key="InverseBooleanToVisibilityConverter" />
+        <!-- Card base (blue neon edge glow) -->
+        <Style x:Key="SysCardStyle" TargetType="Border">
+            <Setter Property="Background" Value="#2A0F1425" />
+            <Setter Property="BorderBrush" Value="#556FA7FF" />
+            <Setter Property="BorderThickness" Value="1.1" />
+            <Setter Property="CornerRadius" Value="18" />
+            <Setter Property="Padding" Value="18,16" />
+            <Setter Property="Margin" Value="0,0,0,0" />
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="14" ShadowDepth="0" Opacity="0.34" Color="#FF2E6BFF" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Card with red glow accent (RAM / Processor) -->
+        <Style x:Key="SysAccentCardStyle" TargetType="Border" BasedOn="{StaticResource SysCardStyle}">
+            <Setter Property="BorderBrush" Value="#55F27A8C" />
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="16" ShadowDepth="0" Opacity="0.40" Color="#FFD45A5A" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SysCardTitleStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#F6F8FF" />
+            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+        <Style x:Key="SysLabelStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#AEB7CA" />
+            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,9,0,0" />
+        </Style>
+
+        <Style x:Key="SysValueStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#F6F8FF" />
+            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="20,0,0,0" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
+
+        <!-- Label+value row separator gap used inside Overview / OS / Memory cards -->
+        <Style x:Key="SysRowGapStyle" TargetType="RowDefinition">
+            <Setter Property="Height" Value="Auto" />
+        </Style>
+
+        <!-- Icon chip box -->
+        <Style x:Key="ChipStyle" TargetType="Border">
+            <Setter Property="Width" Value="40" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="CornerRadius" Value="12" />
+            <Setter Property="Background" Value="#33263A5E" />
+            <Setter Property="BorderBrush" Value="#33407BC0" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+        <!-- Toolbar pill button -->
+        <Style x:Key="SysToolButtonStyle" TargetType="Button">
+            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Height" Value="42" />
+            <Setter Property="Padding" Value="18,0" />
+            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Foreground" Value="#F6F8FF" />
+            <Setter Property="Margin" Value="0,0,10,0" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Host" Background="#221B2B4A" BorderBrush="#33407BC0" BorderThickness="1.2" CornerRadius="21">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="{TemplateBinding Padding}" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Host" Property="Background" Value="#341E4E74" />
+                                <Setter TargetName="Host" Property="BorderBrush" Value="#5A4CA7FF" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Host" Property="Background" Value="#482E5A8C" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Dashed placeholder box -->
+        <Style x:Key="DashedBoxStyle" TargetType="Border">
+            <Setter Property="BorderBrush" Value="#335A87E6" />
+            <Setter Property="BorderThickness" Value="1.6" />
+            <Setter Property="CornerRadius" Value="14" />
+            <Setter Property="Padding" Value="14" />
+            <Setter Property="Background" Value="#1A101622" />
+        </Style>
+
+        <!-- Per-drive inner card -->
+        <Style x:Key="DriveCardStyle" TargetType="Border">
+            <Setter Property="Background" Value="#1A14203B" />
+            <Setter Property="BorderBrush" Value="#33407BC0" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="CornerRadius" Value="12" />
+            <Setter Property="Padding" Value="14,12" />
+            <Setter Property="Margin" Value="0,0,0,10" />
+        </Style>
+
+        <!-- Capacity bar track -->
+        <Style x:Key="CapacityTrackStyle" TargetType="Border">
+            <Setter Property="Height" Value="8" />
+            <Setter Property="CornerRadius" Value="4" />
+            <Setter Property="Background" Value="#22182C44" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+        <!-- Rounded capacity ProgressBar -->
+        <Style x:Key="CapacityBarStyle" TargetType="ProgressBar">
+            <Setter Property="Height" Value="8" />
+            <Setter Property="Minimum" Value="0" />
+            <Setter Property="Maximum" Value="100" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ProgressBar">
+                        <Grid>
+                            <Border CornerRadius="4" Background="#22182C44" />
+                            <Border x:Name="PART_Indicator" CornerRadius="4" HorizontalAlignment="Left">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                        <GradientStop Color="#FF39C8FF" Offset="0" />
+                                        <GradientStop Color="#FF2E6BFF" Offset="1" />
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Integrated / Dedicated badge -->
+        <Style x:Key="GpuBadgeStyle" TargetType="Border">
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="Padding" Value="10,3" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="BorderThickness" Value="1" />
+        </Style>
+
+        <!-- Sub-label inside cards -->
+        <Style x:Key="SysSubLabelStyle" TargetType="TextBlock" BasedOn="{StaticResource SysLabelStyle}">
+            <Setter Property="Margin" Value="0,4,0,0" />
+            <Setter Property="FontSize" Value="13" />
+        </Style>
+
+        <!-- Data template for a physical drive -->
+        <DataTemplate x:Key="StorageDriveTemplate">
+            <Border Style="{StaticResource DriveCardStyle}">
+                <StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="&#xEDA2;" FontFamily="Segoe MDL2 Assets" FontSize="18" Foreground="#4CA7FF" VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding Model}" FontFamily="Segoe UI" FontSize="15" FontWeight="Bold" Foreground="#F6F8FF" Margin="10,0,0,0" VerticalAlignment="Center" TextWrapping="Wrap" />
+                        </StackPanel>
+                        <Border Grid.Column="1" CornerRadius="10" Padding="10,3" Background="#33263A5E" BorderBrush="#33407BC0" BorderThickness="1" VerticalAlignment="Center">
+                            <TextBlock Text="{Binding SizeText}" FontFamily="Segoe UI" FontSize="13" FontWeight="SemiBold" Foreground="#9BD7FF" />
+                        </Border>
+                    </Grid>
+
+                    <Grid Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock Text="Jenis" Style="{StaticResource SysSubLabelStyle}" />
+                            <TextBlock Text="{Binding MediaType}" Style="{StaticResource SysValueStyle}" Margin="0,2,0,0" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock Text="Interface" Style="{StaticResource SysSubLabelStyle}" />
+                            <TextBlock Text="{Binding Interface}" Style="{StaticResource SysValueStyle}" Margin="0,2,0,0" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Form Factor" Style="{StaticResource SysSubLabelStyle}" />
+                            <TextBlock Text="{Binding FormFactor}" Style="{StaticResource SysValueStyle}" Margin="0,2,0,0" />
+                        </StackPanel>
+                    </Grid>
+
+                    <ItemsControl Margin="0,10,0,0" ItemsSource="{Binding Volumes}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Margin="0,0,0,8">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="44" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Border Width="30" Height="30" CornerRadius="8" Background="#33263A5E" BorderBrush="#33407BC0" BorderThickness="1">
+                                        <TextBlock Text="{Binding DriveLetter}" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Foreground="#9BD7FF" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </Border>
+                                    <StackPanel Grid.Column="1" Margin="10,0,0,0" VerticalAlignment="Center">
+                                        <TextBlock Text="{Binding Label}" FontFamily="Segoe UI" FontSize="13" FontWeight="SemiBold" Foreground="#F6F8FF" />
+                                        <Grid Margin="0,4,0,0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <ProgressBar Style="{StaticResource CapacityBarStyle}" Value="{Binding UsedPct}" />
+                                            <TextBlock Grid.Column="1" Margin="8,0,0,0" FontFamily="Segoe UI" FontSize="11" Foreground="#AEB7CA" VerticalAlignment="Center">
+                                                <Run Text="{Binding FreeText, Mode=OneWay}" /><Run Text=" free" />
+                                            </TextBlock>
+                                        </Grid>
+                                    </StackPanel>
+                                    <TextBlock Grid.Column="2" FontFamily="Segoe UI" FontSize="12" Foreground="#AEB7CA" VerticalAlignment="Center">
+                                        <Run Text="{Binding SizeText, Mode=OneWay}" /><Run Text="  ·  " /><Run Text="{Binding FileSystem, Mode=OneWay}" />
+                                    </TextBlock>
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+
+        <!-- Data template for a display adapter -->
+        <DataTemplate x:Key="DisplayAdapterTemplate">
+            <Border Style="{StaticResource DriveCardStyle}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Border Width="40" Height="40" CornerRadius="12" Background="#33263A5E" BorderBrush="#33407BC0" BorderThickness="1" VerticalAlignment="Center">
+                        <TextBlock Text="&#xE7F4;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="#4CA7FF" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <StackPanel Grid.Column="1" Margin="14,0,0,0" VerticalAlignment="Center">
+                        <TextBlock Text="{Binding Name}" FontFamily="Segoe UI" FontSize="15" FontWeight="Bold" Foreground="#F6F8FF" TextWrapping="Wrap" />
+                        <TextBlock Margin="0,4,0,0" FontFamily="Segoe UI" FontSize="12" Foreground="#AEB7CA" TextWrapping="Wrap">
+                            <Run Text="VRAM: " /><Run Text="{Binding VramText, Mode=OneWay}" /><Run Text="   ·   " /><Run Text="{Binding CurrentResolution, Mode=OneWay}" />
+                        </TextBlock>
+                        <TextBlock Margin="0,2,0,0" FontFamily="Segoe UI" FontSize="11" Foreground="#7E879A" TextWrapping="Wrap">
+                            <Run Text="Driver: " /><Run Text="{Binding DriverVersion, Mode=OneWay}" />
+                        </TextBlock>
+                    </StackPanel>
+                    <Border Grid.Column="2" VerticalAlignment="Center">
+                        <Border.Style>
+                            <Style TargetType="Border" BasedOn="{StaticResource GpuBadgeStyle}">
+                                <Setter Property="Background" Value="#33263A5E" />
+                                <Setter Property="BorderBrush" Value="#33407BC0" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding AdapterType}" Value="Integrated">
+                                        <Setter Property="Background" Value="#331E7A4B" />
+                                        <Setter Property="BorderBrush" Value="#5539C86B" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding AdapterType}" Value="Dedicated">
+                                        <Setter Property="Background" Value="#335A3CB6" />
+                                        <Setter Property="BorderBrush" Value="#5573A9FF" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Border.Style>
+                        <TextBlock FontFamily="Segoe UI" FontSize="12" FontWeight="Bold">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Foreground" Value="#AEB7CA" />
+                                    <Setter Property="Text" Value="{Binding AdapterType}" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding AdapterType}" Value="Integrated">
+                                            <Setter Property="Foreground" Value="#FF6FE0A0" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding AdapterType}" Value="Dedicated">
+                                            <Setter Property="Foreground" Value="#FF9BD7FF" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </Border>
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Page.Triggers>
+        <EventTrigger RoutedEvent="Page.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation Storyboard.TargetName="SysInfoPanel"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0" To="1"
+                                     Duration="0:0:0.30">
+                        <DoubleAnimation.EasingFunction>
+                            <CubicEase EasingMode="EaseOut" />
+                        </DoubleAnimation.EasingFunction>
+                    </DoubleAnimation>
+                    <DoubleAnimation Storyboard.TargetName="SysInfoPanel"
+                                     Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                                     From="18" To="0"
+                                     Duration="0:0:0.34">
+                        <DoubleAnimation.EasingFunction>
+                            <CubicEase EasingMode="EaseOut" />
+                        </DoubleAnimation.EasingFunction>
+                    </DoubleAnimation>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Page.Triggers>
+
+    <Grid x:Name="SysInfoPanel" RenderTransformOrigin="0.5,0.5" Margin="40,0,40,36">
+        <Grid.RenderTransform>
+            <TranslateTransform />
+        </Grid.RenderTransform>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Grid Margin="0,4,0,14">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Button Command="{Binding BackToHomeCommand}"
+                    Style="{StaticResource BackIconButtonStyle}"
+                    ToolTip="Kembali ke Main Menu" />
+
+            <StackPanel Grid.Column="1" Margin="8,0,0,0" VerticalAlignment="Center">
+                <TextBlock Text="System Information"
+                           Foreground="#FFFFFF"
+                           FontFamily="Segoe UI"
+                           FontSize="30"
+                           FontWeight="Bold" />
+                <TextBlock Text="Overview of OS, hardware, storage, and display details."
+                           Foreground="#AEB7CA"
+                           FontFamily="Segoe UI"
+                           FontSize="14"
+                           Margin="0,3,0,0" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Command="{Binding OpenSearchCommand}" Style="{StaticResource HomeNavButtonStyle}" Content="&#xE721;" ToolTip="Search" />
+                <Button Command="{Binding OpenSettingsCommand}" Style="{StaticResource HomeNavButtonStyle}" Content="&#xE713;" ToolTip="Settings" />
+                <Border Width="40" Height="40" CornerRadius="20" Background="#33263A5E" BorderBrush="#554CA7FF" BorderThickness="1.4" Margin="8,0,0,0" VerticalAlignment="Center">
+                    <TextBlock Text="{Binding UserName}" Foreground="#F6F8FF" FontFamily="Segoe UI" FontSize="13" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Border>
+                <TextBlock Text="{Binding ClockText}" Foreground="#F6F8FF" FontFamily="Segoe UI" FontSize="20" FontWeight="SemiBold" Margin="16,0,0,0" VerticalAlignment="Center" />
+                <Border Width="1" Height="26" Background="#33FFFFFF" Margin="14,0,4,0" VerticalAlignment="Center" />
+                <Button Style="{StaticResource HomeWindowButtonStyle}" Content="&#xE921;" ToolTip="Minimize" Click="Minimize_OnClick" />
+                <Button Style="{StaticResource HomeWindowButtonStyle}" Content="&#xE922;" ToolTip="Maximize" Click="Maximize_OnClick" />
+                <Button Style="{StaticResource HomeWindowButtonStyle}" Content="&#xE8BB;" ToolTip="Close" Click="Close_OnClick" />
+            </StackPanel>
+        </Grid>
+
+        <!-- Toolbar -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,16">
+            <Button Command="{Binding OpenDiskManagementCommand}"
+                    Style="{StaticResource SysToolButtonStyle}">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="&#xE88E;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="#4CA7FF" VerticalAlignment="Center" />
+                    <TextBlock Text="Partisi Disk" Margin="8,0,0,0" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <Button Command="{Binding OpenUserAccountsCommand}"
+                    Style="{StaticResource SysToolButtonStyle}">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="&#xE716;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="#4CA7FF" VerticalAlignment="Center" />
+                    <TextBlock Text="Nama Akun" Margin="8,0,0,0" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <Button Command="{Binding RefreshCommand}"
+                    Style="{StaticResource SysToolButtonStyle}">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="&#xE72C;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="#4CA7FF" VerticalAlignment="Center" />
+                    <TextBlock Text="Refresh Data" Margin="8,0,0,0" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+        <!-- Cards -->
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+
+                <!-- Row 1: Overview (left) + CPU + RAM (right stacked) -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" Style="{StaticResource SysCardStyle}" Margin="0,0,12,0">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Border Style="{StaticResource ChipStyle}">
+                                    <TextBlock Text="&#xE946;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="#4CA7FF" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <TextBlock Text="Overview" Style="{StaticResource SysCardTitleStyle}" Margin="14,0,0,0" />
+                            </StackPanel>
+
+                            <Grid Margin="0,14,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="170" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <TextBlock Grid.Row="0" Grid.Column="0" Text="OS Name" Style="{StaticResource SysLabelStyle}" Margin="0,0,0,0" />
+                                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding OsName}" Style="{StaticResource SysValueStyle}" />
+                                <TextBlock Grid.Row="1" Grid.Column="0" Text="OS Version" Style="{StaticResource SysLabelStyle}" />
+                                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding OsVersion}" Style="{StaticResource SysValueStyle}" />
+                                <TextBlock Grid.Row="2" Grid.Column="0" Text="System Model" Style="{StaticResource SysLabelStyle}" />
+                                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding SystemModel}" Style="{StaticResource SysValueStyle}" />
+                                <TextBlock Grid.Row="3" Grid.Column="0" Text="BIOS Serial Number" Style="{StaticResource SysLabelStyle}" />
+                                <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding SerialNumber}" Style="{StaticResource SysValueStyle}" />
+                                <TextBlock Grid.Row="4" Grid.Column="0" Text="User" Style="{StaticResource SysLabelStyle}" />
+                                <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding UserName}" Style="{StaticResource SysValueStyle}" />
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Border Style="{StaticResource SysCardStyle}" Margin="0,0,0,10">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Border Style="{StaticResource ChipStyle}">
+                                        <TextBlock Text="&#xE950;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="#4CA7FF" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </Border>
+                                    <TextBlock Text="CPU" Style="{StaticResource SysCardTitleStyle}" Margin="14,0,0,0" />
+                                </StackPanel>
+                                <TextBlock Margin="0,12,0,0" TextWrapping="Wrap">
+                                    <Run Text="{Binding CpuName, Mode=OneWay}" FontFamily="Segoe UI" FontSize="15" FontWeight="Bold" Foreground="#F6F8FF" />
+                                    <Run Text="  " />
+                                    <Run Text="{Binding CpuClock, Mode=OneWay}" FontFamily="Segoe UI" FontSize="14" Foreground="#AEB7CA" />
+                                </TextBlock>
+                            </StackPanel>
+                        </Border>
+
+                        <Border Grid.Row="1" Style="{StaticResource SysAccentCardStyle}">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Border Style="{StaticResource ChipStyle}">
+                                        <TextBlock Text="&#xE7F4;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="#F27A7A" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </Border>
+                                    <TextBlock Text="RAM" Style="{StaticResource SysCardTitleStyle}" Margin="14,0,0,0" />
+                                </StackPanel>
+                                <TextBlock Text="{Binding RamInstalled}" FontFamily="Segoe UI" FontSize="24" FontWeight="Bold" Foreground="#F6F8FF" Margin="0,10,0,0" />
+                                <TextBlock FontFamily="Segoe UI" FontSize="13" Foreground="#AEB7CA" Margin="0,4,0,0" TextWrapping="Wrap">
+                                    <Run Text="{Binding RamTechnology, Mode=OneWay}" /><Run Text="  •  " /><Run Text="{Binding RamSpeed, Mode=OneWay}" />
+                                </TextBlock>
+                                <TextBlock Text="{Binding RamTotalSlots, StringFormat={}{0} Slot total}" FontFamily="Segoe UI" FontSize="13" Foreground="#7E879A" Margin="0,4,0,0" />
+                                <TextBlock FontFamily="Segoe UI" FontSize="12" Foreground="#AEB7CA" Margin="0,2,0,0">
+                                    <Run Text="Onboard: " /><Run Text="{Binding RamOnboard, Mode=OneWay}" />
+                                </TextBlock>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </Grid>
+
+                <!-- Row 2: Storage Details (full width, per-drive cards) -->
+                <Border Style="{StaticResource SysCardStyle}" Margin="0,12,0,0">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Border Style="{StaticResource ChipStyle}">
+                                <TextBlock Text="&#xEDA2;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="#4CA7FF" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Border>
+                            <TextBlock Text="Storage Details" Style="{StaticResource SysCardTitleStyle}" Margin="14,0,0,0" />
+                            <TextBlock Text="{Binding StorageDrives.Count, StringFormat=  ·  {0} drive(s)}" FontFamily="Segoe UI" FontSize="13" Foreground="#7E879A" Margin="10,0,0,0" VerticalAlignment="Center" />
+                        </StackPanel>
+
+                        <ItemsControl Margin="0,14,0,0" ItemsSource="{Binding StorageDrives}" ItemTemplate="{StaticResource StorageDriveTemplate}" />
+
+                        <Border Style="{StaticResource DashedBoxStyle}" Margin="0,0,0,0" Visibility="{Binding StorageDrives.Count, Converter={StaticResource ZeroToVisibilityConverter}}">
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <TextBlock Text="&#xEDA2;" FontFamily="Segoe MDL2 Assets" FontSize="20" Foreground="#6A7C90" HorizontalAlignment="Center" />
+                                <TextBlock Text="Tidak ada disk terdeteksi." FontFamily="Segoe UI" FontSize="13" Foreground="#8A93A6" HorizontalAlignment="Center" Margin="0,8,0,0" />
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Border>
+
+                <!-- Row 3: Display Details (full width) -->
+                <Border Style="{StaticResource SysCardStyle}" Margin="0,12,0,0">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Border Style="{StaticResource ChipStyle}">
+                                <TextBlock Text="&#xE7F4;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="#4CA7FF" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Border>
+                            <TextBlock Text="Display Details" Style="{StaticResource SysCardTitleStyle}" Margin="14,0,0,0" />
+                        </StackPanel>
+
+                        <Grid Margin="0,14,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel>
+                                <TextBlock Text="Resolusi" Style="{StaticResource SysSubLabelStyle}" />
+                                <TextBlock Text="{Binding MonitorResolutionText}" Style="{StaticResource SysValueStyle}" Margin="0,2,0,0" />
+                            </StackPanel>
+                            <StackPanel Grid.Column="1">
+                                <TextBlock Text="Tier" Style="{StaticResource SysSubLabelStyle}" />
+                                <TextBlock Text="{Binding MonitorTier}" Style="{StaticResource SysValueStyle}" Margin="0,2,0,0" />
+                            </StackPanel>
+                            <StackPanel Grid.Column="2">
+                                <TextBlock Text="Refresh Rate" Style="{StaticResource SysSubLabelStyle}" />
+                                <TextBlock Text="{Binding MonitorRefreshRate}" Style="{StaticResource SysValueStyle}" Margin="0,2,0,0" />
+                            </StackPanel>
+                            <StackPanel Grid.Column="3">
+                                <TextBlock Text="Bit Depth" Style="{StaticResource SysSubLabelStyle}" />
+                                <TextBlock Text="{Binding MonitorBitsPerPixel}" Style="{StaticResource SysValueStyle}" Margin="0,2,0,0" />
+                            </StackPanel>
+                        </Grid>
+
+                        <Border Background="#22102130" CornerRadius="10" Padding="12,8" Margin="0,14,0,0" BorderBrush="#33407BC0" BorderThickness="1">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="GPU Aktif (display):" FontFamily="Segoe UI" FontSize="13" Foreground="#AEB7CA" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding DisplayGpuSummary}" FontFamily="Segoe UI" FontSize="14" FontWeight="SemiBold" Foreground="#9BD7FF" Margin="10,0,0,0" VerticalAlignment="Center" TextWrapping="Wrap" />
+                            </StackPanel>
+                        </Border>
+
+                        <ItemsControl Margin="0,12,0,0" ItemsSource="{Binding DisplayAdapters}" ItemTemplate="{StaticResource DisplayAdapterTemplate}" />
+
+                        <Border Style="{StaticResource DashedBoxStyle}" Margin="0,0,0,0" Visibility="{Binding HasDisplayAdapters, Converter={StaticResource InverseBooleanToVisibilityConverter}}">
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <TextBlock Text="&#xE7F4;" FontFamily="Segoe MDL2 Assets" FontSize="20" Foreground="#6A7C90" HorizontalAlignment="Center" />
+                                <TextBlock Text="Tidak ada GPU terdeteksi." FontFamily="Segoe UI" FontSize="13" Foreground="#8A93A6" HorizontalAlignment="Center" Margin="0,8,0,0" />
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Border>
+
+                <!-- Row 4: Operating System / Memory / Processor -->
+                <UniformGrid Columns="3" Margin="0,12,0,0">
+                    <Border Style="{StaticResource SysCardStyle}" Margin="0,0,10,0">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Border Style="{StaticResource ChipStyle}">
+                                    <TextBlock Text="&#xE770;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="#4CA7FF" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <TextBlock Text="Operating System" Style="{StaticResource SysCardTitleStyle}" Margin="14,0,0,0" />
+                            </StackPanel>
+                            <Grid Margin="0,14,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="120" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row="0" Grid.Column="0" Text="OS Name" Style="{StaticResource SysLabelStyle}" Margin="0,0,0,0" />
+                                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding OsName}" Style="{StaticResource SysValueStyle}" />
+                                <TextBlock Grid.Row="1" Grid.Column="0" Text="OS Version" Style="{StaticResource SysLabelStyle}" />
+                                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding OsVersion}" Style="{StaticResource SysValueStyle}" />
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource SysCardStyle}" Margin="0,0,10,0">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Border Style="{StaticResource ChipStyle}">
+                                    <TextBlock Text="&#xE7F4;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="#4CA7FF" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <TextBlock Text="Memory" Style="{StaticResource SysCardTitleStyle}" Margin="14,0,0,0" />
+                            </StackPanel>
+                            <Grid Margin="0,14,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="130" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row="0" Grid.Column="0" Text="Ram Terinstall" Style="{StaticResource SysLabelStyle}" Margin="0,0,0,0" />
+                                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding RamInstalled}" Style="{StaticResource SysValueStyle}" />
+                                <TextBlock Grid.Row="1" Grid.Column="0" Text="Slot Tersedia" Style="{StaticResource SysLabelStyle}" />
+                                <TextBlock Grid.Row="1" Grid.Column="1" Style="{StaticResource SysValueStyle}">
+                                    <Run Text="{Binding RamSlotsFree, Mode=OneWay}" /><Run Text="  Slot" />
+                                </TextBlock>
+                                <TextBlock Grid.Row="2" Grid.Column="0" Text="Slot Terpasang" Style="{StaticResource SysLabelStyle}" />
+                                <TextBlock Grid.Row="2" Grid.Column="1" Style="{StaticResource SysValueStyle}">
+                                    <Run Text="{Binding RamSlotsUsed, Mode=OneWay}" /><Run Text="  Slot" />
+                                </TextBlock>
+                                <TextBlock Grid.Row="3" Grid.Column="0" Text="Speed" Style="{StaticResource SysLabelStyle}" />
+                                <TextBlock Grid.Row="3" Grid.Column="1" Style="{StaticResource SysValueStyle}">
+                                    <Run Text="{Binding RamSpeed, Mode=OneWay}" /><Run Text="  (" /><Run Text="{Binding RamTechnology, Mode=OneWay}" /><Run Text=")" />
+                                </TextBlock>
+                                <TextBlock Grid.Row="4" Grid.Column="0" Text="Onboard" Style="{StaticResource SysLabelStyle}" />
+                                <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding RamOnboard}" Style="{StaticResource SysValueStyle}" />
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource SysAccentCardStyle}">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Border Style="{StaticResource ChipStyle}">
+                                    <TextBlock Text="&#xE9D9;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="#F27A7A" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <TextBlock Text="Processor" Style="{StaticResource SysCardTitleStyle}" Margin="14,0,0,0" />
+                            </StackPanel>
+                            <StackPanel Margin="0,14,0,0">
+                                <TextBlock Text="CPU Name / Processor" FontFamily="Segoe UI" FontSize="13" Foreground="#AEB7CA" />
+                                <TextBlock Text="{Binding CpuName}" FontFamily="Segoe UI" FontSize="15" FontWeight="SemiBold" Foreground="#F6F8FF" TextWrapping="Wrap" Margin="0,6,0,0" />
+                                <TextBlock Text="{Binding CpuClock}" FontFamily="Segoe UI" FontSize="13" Foreground="#AEB7CA" TextWrapping="Wrap" Margin="0,6,0,0" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </UniformGrid>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

@@ -1,0 +1,174 @@
+<Window x:Class="RyotaQC.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:shell="clr-namespace:System.Windows.Shell;assembly=PresentationFramework"
+        xmlns:controls="clr-namespace:RyotaQC.App.Controls"
+        mc:Ignorable="d"
+        Title="RyotaQC V5"
+        Width="1280"
+        Height="800"
+        MinWidth="1100"
+        MinHeight="720"
+        WindowStyle="None"
+        ResizeMode="CanResize"
+        WindowState="Normal"
+        WindowStartupLocation="CenterScreen"
+        Icon="Assets/Images/Tiles/logo.ico"
+        Background="{DynamicResource AppBackgroundBrush}"
+        PreviewKeyDown="Window_OnPreviewKeyDown">
+    <shell:WindowChrome.WindowChrome>
+        <shell:WindowChrome CaptionHeight="0" ResizeBorderThickness="6" CornerRadius="0" GlassFrameThickness="0" />
+    </shell:WindowChrome.WindowChrome>
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <LinearGradientBrush x:Key="WindowBackdropGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#30031826" Offset="0" />
+            <GradientStop Color="#2A052139" Offset="0.45" />
+            <GradientStop Color="#320A3250" Offset="1" />
+        </LinearGradientBrush>
+    </Window.Resources>
+
+    <Grid Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Image x:Name="MainBackgroundImage"
+               Grid.RowSpan="2"
+               Source="Assets/Images/Backgrounds/bg.jpg"
+               Stretch="UniformToFill"
+               Opacity="0.32"
+               RenderOptions.BitmapScalingMode="LowQuality"
+               IsHitTestVisible="False">
+            <Image.CacheMode>
+                <BitmapCache />
+            </Image.CacheMode>
+        </Image>
+
+        <Border x:Name="AmbientGlow"
+                Grid.RowSpan="2"
+                Background="{StaticResource Ps5AmbientGlowBrush}"
+                IsHitTestVisible="False" />
+
+        <!-- Module page wallpaper (follows selected menu) -->
+        <Image x:Name="ModuleWallpaperImage"
+               Grid.RowSpan="2"
+               Stretch="UniformToFill"
+               RenderOptions.BitmapScalingMode="LowQuality"
+               IsHitTestVisible="False"
+               Visibility="Collapsed" />
+
+        <Grid x:Name="ModuleWallpaperOverlay"
+              Grid.RowSpan="2"
+              IsHitTestVisible="False"
+              Visibility="Collapsed">
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#E6050812" Offset="0" />
+                    <GradientStop Color="#B8050812" Offset="0.5" />
+                    <GradientStop Color="#55050812" Offset="0.78" />
+                    <GradientStop Color="#00000000" Offset="1" />
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+
+        <Frame x:Name="ContentFrame"
+               Grid.Row="1"
+               NavigationUIVisibility="Hidden"
+               Background="Transparent"
+               Panel.ZIndex="400"
+               KeyboardNavigation.TabNavigation="Cycle"
+               KeyboardNavigation.DirectionalNavigation="Cycle"
+               RenderTransformOrigin="0.5,0.5"
+               Visibility="Collapsed">
+            <Frame.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform x:Name="FrameScale" ScaleX="1" ScaleY="1" />
+                    <TranslateTransform x:Name="FrameTranslate" X="0" Y="0" />
+                </TransformGroup>
+            </Frame.RenderTransform>
+        </Frame>
+
+        <Border Grid.RowSpan="2" Background="#16060E1C" IsHitTestVisible="False" />
+
+        <!-- Minimal window controls (top-right) -->
+        <StackPanel Grid.Row="0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Margin="0,0,8,0"
+                    Panel.ZIndex="500">
+            <Button Content="&#xE921;" Style="{StaticResource TitleBarButtonStyle}" Click="Minimize_OnClick" />
+            <Button Content="&#xE922;" Style="{StaticResource TitleBarButtonStyle}" Click="Maximize_OnClick" />
+            <Button Content="&#xE8BB;" Style="{StaticResource TitleBarButtonStyle}" Click="Close_OnClick" />
+        </StackPanel>
+
+        <!-- Drag area for the custom title bar -->
+        <Border Grid.Row="0"
+                Background="Transparent"
+                MouseLeftButtonDown="TitleBar_OnMouseLeftButtonDown"
+                Panel.ZIndex="450" />
+
+        <controls:HomeScreen x:Name="HomeScreenControl"
+                             Grid.RowSpan="2"
+                             Panel.ZIndex="1000"
+                             Visibility="Collapsed" />
+
+        <Grid Grid.RowSpan="2"
+              Background="#66000000"
+              Visibility="{Binding IsLoading, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Border Width="320" Height="140" CornerRadius="16" Background="#E0132E4A" BorderBrush="{DynamicResource BorderBrushNeon}" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <ProgressBar Width="210" Height="8" IsIndeterminate="True" />
+                    <TextBlock Text="{Binding LoadingMessage}" Foreground="White" Margin="0,14,0,0" FontFamily="Bahnschrift" FontSize="15" />
+                    <TextBlock Text="Tekan SPACE untuk kembali ke Main Menu"
+                               Foreground="#FFD7F6FF"
+                               Margin="0,6,0,0"
+                               FontFamily="Bahnschrift"
+                               FontSize="12" />
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <Border HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="0,64,18,0"
+                Padding="14,10"
+                CornerRadius="10"
+                Visibility="{Binding IsToastVisible, Converter={StaticResource BooleanToVisibilityConverter}}"
+                BorderThickness="1">
+            <Border.Style>
+                <Style TargetType="Border">
+                    <Setter Property="Background" Value="#DE1A334D" />
+                    <Setter Property="BorderBrush" Value="#8853AFFF" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ToastSuccess}" Value="True">
+                            <Setter Property="Background" Value="#DE174837" />
+                            <Setter Property="BorderBrush" Value="#9BD7FFB0" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Border.Style>
+            <TextBlock Text="{Binding ToastMessage}" Foreground="White" FontFamily="Bahnschrift" FontSize="14" />
+        </Border>
+
+        <Canvas IsHitTestVisible="False" Panel.ZIndex="2000">
+            <Border x:Name="KeyboardSelectedBadge"
+                    Visibility="Collapsed"
+                    Padding="8,3"
+                    CornerRadius="6"
+                    Background="#D4308FB6"
+                    BorderBrush="#FFF2FEFF"
+                    BorderThickness="1">
+                <TextBlock Text="? SELECTED"
+                           FontFamily="Bahnschrift SemiBold"
+                           FontSize="11"
+                           Foreground="White" />
+            </Border>
+        </Canvas>
+    </Grid>
+</Window>

@@ -1,0 +1,100 @@
+<Window x:Class="RyotaQC.App.Views.Windows.QcNotePopupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Catatan Kegagalan"
+        Width="460"
+        Height="340"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner"
+        Background="#0F1425"
+        AllowsTransparency="True"
+        ShowInTaskbar="False">
+    <Border CornerRadius="16" Background="#E60F1425" BorderBrush="#55FF4444" BorderThickness="1.5" Padding="24">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Title with red accent -->
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Border Width="36" Height="36" CornerRadius="10" Background="#33B91C1C" BorderBrush="#55FF4444" BorderThickness="1" VerticalAlignment="Center">
+                    <TextBlock Text="&#xE7BA;"
+                               FontFamily="Segoe MDL2 Assets"
+                               FontSize="16"
+                               Foreground="#FF6B6B"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center" />
+                </Border>
+                <TextBlock Text="Catatan Kegagalan"
+                           Foreground="#F6F8FF"
+                           FontFamily="Segoe UI"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           Margin="14,0,0,0"
+                           VerticalAlignment="Center" />
+            </StackPanel>
+
+            <!-- Question -->
+            <TextBlock Grid.Row="1"
+                       x:Name="QuestionText"
+                       Text="Mengapa test ini gagal (X)?"
+                       Foreground="#AEB7CA"
+                       FontFamily="Segoe UI"
+                       FontSize="15"
+                       TextWrapping="Wrap"
+                       Margin="0,16,0,0" />
+
+            <!-- Answer text box -->
+            <TextBox Grid.Row="2"
+                     x:Name="AnswerBox"
+                     FontFamily="Segoe UI"
+                     FontSize="14"
+                     Foreground="#F6F8FF"
+                     Background="#22182C44"
+                     BorderBrush="#55FF4444"
+                     BorderThickness="1.5"
+                     Padding="12,10"
+                     Margin="0,10,0,0"
+                     TextWrapping="Wrap"
+                     AcceptsReturn="True"
+                     VerticalScrollBarVisibility="Auto"
+                     CaretBrush="#4CA7FF" />
+
+            <!-- Buttons -->
+            <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,16,0,0">
+                <Button Width="100" Height="40" Content="Batal" Margin="0,0,12,0" Click="Cancel_Click" Cursor="Hand">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="CancelB" CornerRadius="10" Background="#44444444" BorderBrush="#66FFFFFF" BorderThickness="1.2">
+                                <TextBlock Text="Batal" FontFamily="Segoe UI" FontSize="14" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="CancelB" Property="Background" Value="#55555555" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Width="100" Height="40" Content="Konfirm" Click="Confirm_Click" Cursor="Hand">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="ConfirmB" CornerRadius="10" Background="#FFB91C1C" BorderBrush="#55FF4444" BorderThickness="1.2">
+                                <TextBlock Text="Konfirm" FontFamily="Segoe UI" FontSize="14" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="ConfirmB" Property="Background" Value="#FFD22222" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

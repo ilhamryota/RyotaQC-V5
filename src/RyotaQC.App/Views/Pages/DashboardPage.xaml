@@ -1,0 +1,333 @@
+﻿<Page x:Class="RyotaQC.App.Views.Pages.DashboardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Background="Transparent">
+    <Page.Resources>
+        <!-- Tile strip item (top row, PS5 game-tile look) -->
+        <DataTemplate x:Key="TileStripTemplate">
+            <Button Command="{Binding DataContext.SelectTileCommand, RelativeSource={RelativeSource AncestorType=Page}}"
+                    CommandParameter="{Binding}"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    Padding="0"
+                    Cursor="Hand"
+                    Focusable="True">
+                <Border Width="150"
+                        Height="150"
+                        CornerRadius="16"
+                        BorderThickness="1.6"
+                        Background="#20102440"
+                        RenderTransformOrigin="0.5,0.5">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="BorderBrush" Value="#553F77FF" />
+                            <Setter Property="Effect" Value="{x:Null}" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsCurrent}" Value="True">
+                                    <Setter Property="BorderBrush" Value="#E05FA8FF" />
+                                    <Setter Property="Effect">
+                                        <Setter.Value>
+                                            <DropShadowEffect BlurRadius="16" ShadowDepth="0" Opacity="0.75" Color="#FF2E7CFF" />
+                                        </Setter.Value>
+                                    </Setter>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <Grid ClipToBounds="True">
+                        <Image Source="{Binding ImagePath}"
+                               Stretch="UniformToFill"
+                               RenderOptions.BitmapScalingMode="LowQuality">
+                            <Image.CacheMode>
+                                <BitmapCache />
+                            </Image.CacheMode>
+                        </Image>
+                        <Grid>
+                            <Grid.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#00000000" Offset="0" />
+                                    <GradientStop Color="#7A0C0F1C" Offset="1" />
+                                </LinearGradientBrush>
+                            </Grid.Background>
+                        </Grid>
+                        <Border CornerRadius="16" BorderBrush="#66000000" BorderThickness="1" />
+                        <TextBlock Text="{Binding Title}"
+                                   TextWrapping="Wrap"
+                                   TextTrimming="CharacterEllipsis"
+                                   MaxHeight="36"
+                                   Margin="10,0,10,6"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Bottom"
+                                   Foreground="White"
+                                   FontFamily="Bahnschrift SemiBold"
+                                   FontSize="15">
+                            <TextBlock.Effect>
+                                <DropShadowEffect BlurRadius="16" ShadowDepth="0" Opacity="0.7" Color="#FF06131F" />
+                            </TextBlock.Effect>
+                        </TextBlock>
+                    </Grid>
+                </Border>
+            </Button>
+        </DataTemplate>
+
+        <!-- Hero (bottom, featured cover) -->
+        <DataTemplate x:Key="HeroTemplate">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid>
+                    <Image Source="{Binding ImagePath}"
+                           Stretch="UniformToFill"
+                           RenderOptions.BitmapScalingMode="LowQuality">
+                        <Image.CacheMode>
+                            <BitmapCache />
+                        </Image.CacheMode>
+                    </Image>
+                    <Grid>
+                        <Grid.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Color="#7A0A0E18" Offset="0" />
+                                <GradientStop Color="#B00D1B30" Offset="0.5" />
+                                <GradientStop Color="#F0050D18" Offset="1" />
+                            </LinearGradientBrush>
+                        </Grid.Background>
+                    </Grid>
+                </Grid>
+
+                <StackPanel Grid.Row="1"
+                            Margin="44,28,44,28"
+                            VerticalAlignment="Bottom"
+                            HorizontalAlignment="Left">
+                    <TextBlock Text="{Binding Title}"
+                               FontFamily="Bahnschrift SemiBold"
+                               FontSize="52"
+                               Foreground="#FFF6FBFE" />
+                    <TextBlock Text="{Binding Subtitle}"
+                               Margin="0,8,0,0"
+                               FontFamily="Bahnschrift SemiBold"
+                               FontSize="22"
+                               Foreground="#FFD3E5F4" />
+
+                    <Button Command="{Binding DataContext.OpenCurrentTileCommand, RelativeSource={RelativeSource AncestorType=Page}}"
+                            Style="{StaticResource BigPrimaryButtonStyle}"
+                            Width="196"
+                            Height="52"
+                            Margin="0,26,0,0"
+                            HorizontalAlignment="Left"
+                            Cursor="Hand">
+                        <TextBlock FontFamily="Bahnschrift SemiBold" FontSize="18">
+                            <Run Text="Buka" /><Run Text="  " /><Run Text="&#xE72A;" FontFamily="Segoe MDL2 Assets" />
+                        </TextBlock>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+    <Page.Triggers>
+        <EventTrigger RoutedEvent="Page.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation Storyboard.TargetName="HeroCard"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0" To="1"
+                                     Duration="0:0:0.34">
+                        <DoubleAnimation.EasingFunction>
+                            <CubicEase EasingMode="EaseOut" />
+                        </DoubleAnimation.EasingFunction>
+                    </DoubleAnimation>
+                    <DoubleAnimation Storyboard.TargetName="HeroCard"
+                                     Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                                     From="22" To="0"
+                                     Duration="0:0:0.40">
+                        <DoubleAnimation.EasingFunction>
+                            <CubicEase EasingMode="EaseOut" />
+                        </DoubleAnimation.EasingFunction>
+                    </DoubleAnimation>
+                    <DoubleAnimation Storyboard.TargetName="TileStrip"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0" To="1"
+                                     Duration="0:0:0.32"
+                                     BeginTime="0:0:0.06">
+                        <DoubleAnimation.EasingFunction>
+                            <CubicEase EasingMode="EaseOut" />
+                        </DoubleAnimation.EasingFunction>
+                    </DoubleAnimation>
+                    <DoubleAnimation Storyboard.TargetName="TileStrip"
+                                     Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                                     From="16" To="0"
+                                     Duration="0:0:0.36"
+                                     BeginTime="0:0:0.06">
+                        <DoubleAnimation.EasingFunction>
+                            <CubicEase EasingMode="EaseOut" />
+                        </DoubleAnimation.EasingFunction>
+                    </DoubleAnimation>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Page.Triggers>
+    <Grid Background="Transparent" Loaded="Page_OnLoaded">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- TOP: tile strip carousel -->
+        <Grid x:Name="TileStrip"
+              Grid.Row="0"
+              Margin="0,0,0,16"
+              RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TranslateTransform />
+            </Grid.RenderTransform>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <ScrollViewer x:Name="TileScroller"
+                          HorizontalScrollBarVisibility="Hidden"
+                          VerticalScrollBarVisibility="Disabled"
+                          HorizontalContentAlignment="Center">
+                <ListBox x:Name="TileList"
+                         ItemsSource="{Binding Tiles}"
+                         SelectionMode="Single"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Padding="0"
+                         SelectionChanged="TileList_OnSelectionChanged"
+                         PreviewKeyDown="TileList_OnKeyDown"
+                         ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                         ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                         KeyboardNavigation.TabNavigation="Continue">
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal" Margin="24,0,24,0" />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+                            <Setter Property="Background" Value="Transparent" />
+                            <Setter Property="BorderThickness" Value="0" />
+                            <Setter Property="Padding" Value="3,0" />
+                            <Setter Property="Margin" Value="2,0" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="ListBoxItem">
+                                        <ContentPresenter />
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <ContentControl Content="{Binding}" ContentTemplate="{StaticResource TileStripTemplate}" />
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </ScrollViewer>
+
+            <Grid Grid.Row="1" Margin="0,14,0,0" HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0"
+                        Content="&#xE76B;"
+                        Style="{StaticResource RoundedActionButtonStyle}"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="20"
+                        Width="44"
+                        Height="44"
+                        Padding="0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Command="{Binding PrevTileCommand}"
+                        Cursor="Hand" />
+
+                <StackPanel Grid.Column="1"
+                            Orientation="Horizontal"
+                            VerticalAlignment="Center"
+                            Margin="18,0,18,0">
+                    <ItemsControl ItemsSource="{Binding Tiles}" VerticalAlignment="Center">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Horizontal" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Ellipse Width="9"
+                                         Height="9"
+                                         Margin="3,0"
+                                         Stroke="#886AAFFF"
+                                         StrokeThickness="1"
+                                         Fill="#66000000">
+                                    <Ellipse.Style>
+                                        <Style TargetType="Ellipse">
+                                            <Setter Property="Fill" Value="#66000000" />
+                                            <Setter Property="Stroke" Value="#885F87FF" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsCurrent}" Value="True">
+                                                    <Setter Property="Fill" Value="#FF2E7CFF" />
+                                                    <Setter Property="Stroke" Value="#FF5FA8FF" />
+                                                    <Setter Property="Effect">
+                                                        <Setter.Value>
+                                                            <DropShadowEffect BlurRadius="7" ShadowDepth="0" Opacity="0.6" Color="#FF2E7CFF" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Ellipse.Style>
+                                </Ellipse>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+
+                <Button Grid.Column="2"
+                        Content="&#xE76C;"
+                        Style="{StaticResource RoundedActionButtonStyle}"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="20"
+                        Width="44"
+                        Height="44"
+                        Padding="0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Command="{Binding NextTileCommand}"
+                        Cursor="Hand" />
+            </Grid>
+        </Grid>
+
+        <!-- BOTTOM: hero (featured cover) -->
+        <Border x:Name="HeroCard"
+                Grid.Row="1"
+                Margin="0,0,0,10"
+                CornerRadius="24"
+                BorderBrush="#7280BBFF"
+                BorderThickness="1.6"
+                ClipToBounds="True"
+                RenderTransformOrigin="0.5,0.5"
+                Effect="{StaticResource Ps5GlowShadow}">
+            <Border.RenderTransform>
+                <TranslateTransform />
+            </Border.RenderTransform>
+            <Grid>
+                <ContentControl x:Name="HeroBack" Content="{Binding CurrentTile}" ContentTemplate="{StaticResource HeroTemplate}" />
+                <ContentControl x:Name="HeroFront" Content="{Binding CurrentTile}" ContentTemplate="{StaticResource HeroTemplate}" />
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

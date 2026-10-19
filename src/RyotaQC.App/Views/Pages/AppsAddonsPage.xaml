@@ -1,0 +1,546 @@
+﻿<Page x:Class="RyotaQC.App.Views.Pages.AppsAddonsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:conv="clr-namespace:RyotaQC.App.Converters"
+      mc:Ignorable="d"
+      Background="Transparent">
+    <Page.Resources>
+        <conv:ImagePathConverter x:Key="ImagePathConverter" />
+
+        <Style x:Key="OfflineCardButtonStyle" TargetType="Button">
+            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Host"
+                                Background="#2A121625"
+                                BorderBrush="#335A87E6"
+                                BorderThickness="1.2"
+                                CornerRadius="16"
+                                Padding="8"
+                                RenderTransformOrigin="0.5,0.5">
+                            <Border.RenderTransform>
+                                <ScaleTransform x:Name="BtnScale" ScaleX="1" ScaleY="1" />
+                            </Border.RenderTransform>
+                            <ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Host" Property="Background" Value="#3A1B2B4A" />
+                                <Setter TargetName="Host" Property="BorderBrush" Value="#6A4CA7FF" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Host" Property="Background" Value="#4A2E5A8C" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Page.Triggers>
+        <EventTrigger RoutedEvent="Page.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation Storyboard.TargetName="AppsPanel"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0" To="1"
+                                     Duration="0:0:0.30">
+                        <DoubleAnimation.EasingFunction>
+                            <CubicEase EasingMode="EaseOut" />
+                        </DoubleAnimation.EasingFunction>
+                    </DoubleAnimation>
+                    <DoubleAnimation Storyboard.TargetName="AppsPanel"
+                                     Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                                     From="18" To="0"
+                                     Duration="0:0:0.34">
+                        <DoubleAnimation.EasingFunction>
+                            <CubicEase EasingMode="EaseOut" />
+                        </DoubleAnimation.EasingFunction>
+                    </DoubleAnimation>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Page.Triggers>
+    <Grid x:Name="AppsPanel" RenderTransformOrigin="0.5,0.5" Margin="20,0,20,20">
+        <Grid.RenderTransform>
+            <TranslateTransform />
+        </Grid.RenderTransform>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Button Command="{Binding BackToHomeCommand}"
+                    Style="{StaticResource BackIconButtonStyle}"
+                    ToolTip="Kembali ke Main Menu" />
+            <TextBlock Grid.Column="1" Text="Apps Add-ons" Style="{StaticResource SectionHeaderTextStyle}" />
+            <Button Grid.Column="2"
+                    Content="Refresh"
+                    Command="{Binding RefreshCommand}"
+                    Style="{StaticResource RoundedActionButtonStyle}"
+                    Margin="10,0,0,0" />
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="0,10,0,14">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Margin="0,0,12,0">
+                <Border CornerRadius="16" BorderThickness="1" BorderBrush="{DynamicResource BorderBrushNeon}" Height="150">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="BorderThickness" Value="1" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsOnlineSelected}" Value="True">
+                                    <Setter Property="BorderThickness" Value="2.2" />
+                                    <Setter Property="Effect" Value="{StaticResource SoftGlowShadow}" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <Button Command="{Binding SelectCategoryCommand}"
+                            CommandParameter="online"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Cursor="Hand">
+                        <Grid>
+                            <Image Source="{Binding OnlineCardImagePath}" Stretch="UniformToFill" />
+                            <Border Background="#55101E33" />
+                        </Grid>
+                    </Button>
+                </Border>
+                <TextBlock Text="Online Apps"
+                           Margin="0,8,0,0"
+                           HorizontalAlignment="Center"
+                           FontFamily="Bahnschrift SemiBold"
+                           FontSize="19"
+                           Foreground="{DynamicResource TextPrimaryBrush}" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Margin="6,0,6,0">
+                <Border CornerRadius="16" BorderThickness="1" BorderBrush="{DynamicResource BorderBrushNeon}" Height="150">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="BorderThickness" Value="1" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsOfflineSelected}" Value="True">
+                                    <Setter Property="BorderThickness" Value="2.2" />
+                                    <Setter Property="Effect" Value="{StaticResource SoftGlowShadow}" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <Button Command="{Binding SelectCategoryCommand}"
+                            CommandParameter="offline"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Cursor="Hand">
+                        <Grid>
+                            <Image Source="{Binding OfflineCardImagePath}" Stretch="UniformToFill" />
+                            <Border Background="#55101E33" />
+                        </Grid>
+                    </Button>
+                </Border>
+                <TextBlock Text="Offline Installer"
+                           Margin="0,8,0,0"
+                           HorizontalAlignment="Center"
+                           FontFamily="Bahnschrift SemiBold"
+                           FontSize="19"
+                           Foreground="{DynamicResource TextPrimaryBrush}" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Margin="12,0,0,0">
+                <Border CornerRadius="16" BorderThickness="1" BorderBrush="{DynamicResource BorderBrushNeon}" Height="150">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="BorderThickness" Value="1" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsOfficeSelected}" Value="True">
+                                    <Setter Property="BorderThickness" Value="2.2" />
+                                    <Setter Property="Effect" Value="{StaticResource SoftGlowShadow}" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <Button Command="{Binding SelectCategoryCommand}"
+                            CommandParameter="office"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Cursor="Hand">
+                        <Grid>
+                            <Image Source="{Binding OfficeCardImagePath}" Stretch="UniformToFill" />
+                            <Border Background="#55101E33" />
+                        </Grid>
+                    </Button>
+                </Border>
+                <TextBlock Text="Microsoft Office"
+                           Margin="0,8,0,0"
+                           HorizontalAlignment="Center"
+                           FontFamily="Bahnschrift SemiBold"
+                           FontSize="19"
+                           Foreground="{DynamicResource TextPrimaryBrush}" />
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Border>
+                <Border.Style>
+                    <Style TargetType="Border" BasedOn="{StaticResource GlassCardStyle}">
+                        <Setter Property="Visibility" Value="Collapsed" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsOnlineSelected}" Value="True">
+                                <Setter Property="Visibility" Value="Visible" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Online Apps"
+                               FontFamily="Bahnschrift SemiBold"
+                               FontSize="26"
+                               Foreground="{DynamicResource TextPrimaryBrush}" />
+
+                    <StackPanel Grid.Row="1" Margin="0,8,0,0">
+                        <Border CornerRadius="10" Background="#22000000" BorderBrush="#335A87E6" BorderThickness="1" Padding="14,10" Margin="0,0,0,10">
+                            <StackPanel>
+                                <TextBlock Text="Tentang Online Apps"
+                                           FontFamily="Bahnschrift SemiBold"
+                                           FontSize="17"
+                                           Foreground="{DynamicResource TextPrimaryBrush}" />
+                                <TextBlock Text="Aplikasi pack yang di-download secara online. Pastikan koneksi internet lancar agar instalasi optimal."
+                                           TextWrapping="Wrap"
+                                           FontSize="14"
+                                           Margin="0,4,0,0"
+                                           Foreground="{DynamicResource TextMutedBrush}" />
+                            </StackPanel>
+                        </Border>
+                        <TextBlock Text="Paket Aplikasi Online:"
+                                   FontFamily="Bahnschrift SemiBold"
+                                   FontSize="15"
+                                   Foreground="{DynamicResource TextPrimaryBrush}" />
+                        <WrapPanel Margin="0,6,0,0">
+                            <Border Margin="0,0,6,4" Padding="10,5" CornerRadius="6" Background="#1A101E33" BorderBrush="#225A87E6" BorderThickness="0.8">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="11" Foreground="#4CA7FF" VerticalAlignment="Center" Margin="0,0,8,0" />
+                                    <TextBlock Text="VCRedist Full" FontSize="14" Foreground="{DynamicResource TextPrimaryBrush}" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+                            <Border Margin="0,0,6,4" Padding="10,5" CornerRadius="6" Background="#1A101E33" BorderBrush="#225A87E6" BorderThickness="0.8">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="11" Foreground="#4CA7FF" VerticalAlignment="Center" Margin="0,0,8,0" />
+                                    <TextBlock Text="Visual C++" FontSize="14" Foreground="{DynamicResource TextPrimaryBrush}" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+                            <Border Margin="0,0,6,4" Padding="10,5" CornerRadius="6" Background="#1A101E33" BorderBrush="#225A87E6" BorderThickness="0.8">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="11" Foreground="#4CA7FF" VerticalAlignment="Center" Margin="0,0,8,0" />
+                                    <TextBlock Text="Firefox" FontSize="14" Foreground="{DynamicResource TextPrimaryBrush}" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+                            <Border Margin="0,0,6,4" Padding="10,5" CornerRadius="6" Background="#1A101E33" BorderBrush="#225A87E6" BorderThickness="0.8">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="11" Foreground="#4CA7FF" VerticalAlignment="Center" Margin="0,0,8,0" />
+                                    <TextBlock Text="Chrome" FontSize="14" Foreground="{DynamicResource TextPrimaryBrush}" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+                            <Border Margin="0,0,6,4" Padding="10,5" CornerRadius="6" Background="#1A101E33" BorderBrush="#225A87E6" BorderThickness="0.8">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="11" Foreground="#4CA7FF" VerticalAlignment="Center" Margin="0,0,8,0" />
+                                    <TextBlock Text="Zoom" FontSize="14" Foreground="{DynamicResource TextPrimaryBrush}" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+                            <Border Margin="0,0,6,4" Padding="10,5" CornerRadius="6" Background="#1A101E33" BorderBrush="#225A87E6" BorderThickness="0.8">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="11" Foreground="#4CA7FF" VerticalAlignment="Center" Margin="0,0,8,0" />
+                                    <TextBlock Text="TeamViewer" FontSize="14" Foreground="{DynamicResource TextPrimaryBrush}" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+                            <Border Margin="0,0,6,4" Padding="10,5" CornerRadius="6" Background="#1A101E33" BorderBrush="#225A87E6" BorderThickness="0.8">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="11" Foreground="#4CA7FF" VerticalAlignment="Center" Margin="0,0,8,0" />
+                                    <TextBlock Text="VLC" FontSize="14" Foreground="{DynamicResource TextPrimaryBrush}" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+                            <Border Margin="0,0,0,4" Padding="10,5" CornerRadius="6" Background="#1A101E33" BorderBrush="#225A87E6" BorderThickness="0.8">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="11" Foreground="#4CA7FF" VerticalAlignment="Center" Margin="0,0,8,0" />
+                                    <TextBlock Text="WinRAR" FontSize="14" Foreground="{DynamicResource TextPrimaryBrush}" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+                        </WrapPanel>
+                        <Button Content="Run Aplikasi Online"
+                                Command="{Binding RunOnlinePrimaryCommand}"
+                                Style="{StaticResource BigPrimaryButtonStyle}"
+                                Width="240"
+                                Height="44"
+                                Margin="0,14,0,0" />
+                        <TextBlock Text="Belum ada file .exe pada Online Apps."
+                                   Margin="0,12,0,0">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock" BasedOn="{StaticResource EmptyStateTextStyle}">
+                                    <Setter Property="Visibility" Value="Collapsed" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding HasOnlineApps}" Value="False">
+                                            <Setter Property="Visibility" Value="Visible" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <Border>
+                <Border.Style>
+                    <Style TargetType="Border" BasedOn="{StaticResource GlassCardStyle}">
+                        <Setter Property="Visibility" Value="Collapsed" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsOfflineSelected}" Value="True">
+                                <Setter Property="Visibility" Value="Visible" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Offline Installer"
+                               FontFamily="Bahnschrift SemiBold"
+                               FontSize="26"
+                               Foreground="{DynamicResource TextPrimaryBrush}" />
+
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,10,0,12">
+                        <Button Content="Install Selected"
+                                Command="{Binding InstallSelectedOfflineCommand}"
+                                Style="{StaticResource RoundedActionButtonStyle}"
+                                Width="180" />
+                        <Button Content="Install All"
+                                Command="{Binding InstallAllOfflineCommand}"
+                                Style="{StaticResource BigPrimaryButtonStyle}"
+                                Width="160"
+                                Height="44" />
+                    </StackPanel>
+
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1.6*" />
+                            <ColumnDefinition Width="0.9*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0" Margin="0,0,10,0">
+                            <TextBlock Text="Belum ada aplikasi offline (folder) yang terdeteksi.">
+                                <TextBlock.Style>
+                                    <Style TargetType="TextBlock" BasedOn="{StaticResource EmptyStateTextStyle}">
+                                        <Setter Property="Visibility" Value="Collapsed" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding HasOfflineApps}" Value="False">
+                                                <Setter Property="Visibility" Value="Visible" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                <ItemsControl ItemsSource="{Binding OfflineApps}">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <WrapPanel />
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding ToggleSelectedCommand}"
+                                                    Style="{StaticResource OfflineCardButtonStyle}"
+                                                    Margin="0,0,10,10"
+                                                    Cursor="Hand">
+                                                <Grid Width="150" Height="170">
+                                                    <StackPanel VerticalAlignment="Center">
+                                                        <Border Width="56" Height="56" CornerRadius="14"
+                                                                Background="#33263A5E"
+                                                                HorizontalAlignment="Center"
+                                                                VerticalAlignment="Center">
+                                                            <Image Source="{Binding IconPath, Converter={StaticResource ImagePathConverter}}"
+                                                                   Width="40" Height="40" Stretch="Uniform"
+                                                                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                                   RenderOptions.BitmapScalingMode="HighQuality" />
+                                                        </Border>
+                                                        <TextBlock Text="{Binding Name}"
+                                                                   Foreground="#F6F8FF"
+                                                                   FontFamily="Segoe UI"
+                                                                   FontSize="16"
+                                                                   FontWeight="SemiBold"
+                                                                   HorizontalAlignment="Center"
+                                                                   TextWrapping="Wrap"
+                                                                   Margin="0,12,0,0" />
+                                                        <TextBlock Text="Klik untuk pilih"
+                                                                   Foreground="#7E879A"
+                                                                   FontFamily="Segoe UI"
+                                                                   FontSize="11"
+                                                                   HorizontalAlignment="Center"
+                                                                   Margin="0,4,0,0" />
+                                                    </StackPanel>
+                                                    <!-- Selected checkmark badge (green when selected) -->
+                                                    <Border Width="30" Height="30" CornerRadius="15"
+                                                            HorizontalAlignment="Right" VerticalAlignment="Top"
+                                                            Margin="0,6,6,0"
+                                                            BorderThickness="1.4">
+                                                        <Border.Style>
+                                                            <Style TargetType="Border">
+                                                                <Setter Property="Background" Value="#33000000" />
+                                                                <Setter Property="BorderBrush" Value="#555A87E6" />
+                                                                <Style.Triggers>
+                                                                    <DataTrigger Binding="{Binding IsSelected}" Value="True">
+                                                                        <Setter Property="Background" Value="#FF1E7A4B" />
+                                                                        <Setter Property="BorderBrush" Value="#FF39C86B" />
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </Border.Style>
+                                                        <TextBlock Text="&#xE73E;"
+                                                                   FontFamily="Segoe MDL2 Assets"
+                                                                   FontSize="15"
+                                                                   Foreground="#FFFFFF"
+                                                                   HorizontalAlignment="Center"
+                                                                   VerticalAlignment="Center" />
+                                                    </Border>
+                                                </Grid>
+                                            </Button>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </ScrollViewer>
+                        </Grid>
+
+                        <Border Grid.Column="1"
+                                Padding="14"
+                                CornerRadius="12"
+                                BorderBrush="#5539C86B"
+                                BorderThickness="1.2"
+                                Background="#22000000">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="#FF39C86B" VerticalAlignment="Center" Margin="0,0,8,0" />
+                                    <TextBlock Text="Aplikasi Terpilih"
+                                               FontFamily="Bahnschrift SemiBold"
+                                               FontSize="17"
+                                               Foreground="{DynamicResource TextPrimaryBrush}" />
+                                </StackPanel>
+                                <Border CornerRadius="8" Background="#3339C86B" Padding="8,4" Margin="0,8,0,0" HorizontalAlignment="Left">
+                                    <TextBlock Text="{Binding SelectedOfflineCount, StringFormat={}{0} aplikasi dipilih}"
+                                               FontSize="14"
+                                               FontWeight="SemiBold"
+                                               Foreground="#FFFFFF" />
+                                </Border>
+                                <TextBlock Text="List Aplikasi:"
+                                           FontFamily="Bahnschrift SemiBold"
+                                           FontSize="14"
+                                           Margin="0,10,0,4"
+                                           Foreground="{DynamicResource TextPrimaryBrush}" />
+                                <ScrollViewer VerticalScrollBarVisibility="Auto" MaxHeight="180">
+                                    <TextBlock Text="{Binding SelectedOfflineItemsText}"
+                                               FontSize="13"
+                                               TextWrapping="Wrap"
+                                               Foreground="{DynamicResource TextMutedBrush}" />
+                                </ScrollViewer>
+                                <ProgressBar Margin="0,10,0,0" Height="8" Maximum="100" Value="{Binding OfflineInstallProgress}" />
+                                <TextBlock Text="{Binding OfflineInstallProgress, StringFormat=Progress: {0:F0}%}" Margin="0,6,0,0" FontSize="13" Foreground="{DynamicResource TextMutedBrush}" />
+                                <TextBlock Text="{Binding OfflineInstallStatus, StringFormat=Status: {0}}" Margin="0,3,0,0" FontSize="13" Foreground="{DynamicResource TextPrimaryBrush}" />
+                                <TextBlock Text="{Binding OfflineCurrentItem, StringFormat=Current: {0}}" Margin="0,2,0,0" FontSize="13" Foreground="{DynamicResource TextMutedBrush}" />
+                                <TextBlock Text="{Binding OfflineElapsedText, StringFormat=Elapsed: {0} (mm:ss)}" Margin="0,2,0,0" FontSize="13" Foreground="{DynamicResource TextMutedBrush}" />
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <Border>
+                <Border.Style>
+                    <Style TargetType="Border" BasedOn="{StaticResource GlassCardStyle}">
+                        <Setter Property="Visibility" Value="Collapsed" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsOfficeSelected}" Value="True">
+                                <Setter Property="Visibility" Value="Visible" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Microsoft Office"
+                               FontFamily="Bahnschrift SemiBold"
+                               FontSize="26"
+                               Foreground="{DynamicResource TextPrimaryBrush}" />
+
+                    <StackPanel Grid.Row="1" Margin="0,8,0,0">
+                        <Border CornerRadius="10" Background="#22000000" BorderBrush="#335A87E6" BorderThickness="1" Padding="14,10" Margin="0,0,0,10">
+                            <StackPanel>
+                                <TextBlock Text="Tentang Microsoft Office"
+                                           FontFamily="Bahnschrift SemiBold"
+                                           FontSize="17"
+                                           Foreground="{DynamicResource TextPrimaryBrush}" />
+                                <TextBlock Text="Installer offline Click-to-Run untuk Microsoft Office. Sekali klik, instalasi berjalan otomatis tanpa perlu download ulang. Pastikan daya perangkat penuh dan lisensi tersedia."
+                                           TextWrapping="Wrap"
+                                           FontSize="14"
+                                           Margin="0,4,0,0"
+                                           Foreground="{DynamicResource TextMutedBrush}" />
+                            </StackPanel>
+                        </Border>
+                        <Button Content="Run Office Installer"
+                                Command="{Binding RunOfficePrimaryCommand}"
+                                Style="{StaticResource BigPrimaryButtonStyle}"
+                                Width="240"
+                                Height="44"
+                                Margin="0,10,0,0" />
+                        <TextBlock Text="Installer Office tidak ditemukan pada tools\addons\Office."
+                                   Margin="0,12,0,0">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock" BasedOn="{StaticResource EmptyStateTextStyle}">
+                                    <Setter Property="Visibility" Value="Collapsed" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding HasOfficeApps}" Value="False">
+                                            <Setter Property="Visibility" Value="Visible" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+        </Grid>
+    </Grid>
+</Page>
+

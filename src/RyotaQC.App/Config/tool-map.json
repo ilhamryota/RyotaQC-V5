@@ -1,0 +1,239 @@
+﻿{
+  "tools": [
+    {
+      "id": "disk_management",
+      "name": "Disk Management",
+      "type": "msc",
+      "relativePath": "diskmgmt.msc",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": ""
+    },
+    {
+      "id": "user_accounts",
+      "name": "Control Panel User Accounts",
+      "type": "cmd",
+      "relativePath": "cmd.exe",
+      "arguments": "/c control.exe /name Microsoft.UserAccounts",
+      "runAsAdmin": false,
+      "workingDirectory": ""
+    },
+    {
+      "id": "windows_activation",
+      "name": "Aktivasi",
+      "type": "bat",
+      "relativePath": "tools/MAS_AIO.cmd",
+      "arguments": "",
+      "runAsAdmin": true,
+      "keepOpen": true,
+      "workingDirectory": "tools"
+    },
+    {
+      "id": "hwinfo",
+      "name": "HWiNFO",
+      "type": "exe",
+      "relativePath": "tools/qc/HW Information/HWiNFO64.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/qc/HW Information"
+    },
+    {
+      "id": "battery_report",
+      "name": "Battery Report",
+      "type": "cmd",
+      "relativePath": "cmd.exe",
+      "arguments": "/c powercfg /batteryreport",
+      "runAsAdmin": true,
+      "workingDirectory": ""
+    },
+    {
+      "id": "vcpp",
+      "name": "VC++",
+      "type": "exe",
+      "relativePath": "tools/addons/offline/VC++/VisualCppRedist_AIO_x86_x64.exe",
+      "arguments": "",
+      "runAsAdmin": true,
+      "workingDirectory": "tools/addons/offline/VC++"
+    },
+    {
+      "id": "directx",
+      "name": "DirectX",
+      "type": "exe",
+      "relativePath": "tools/addons/offline/DirectX/directx_Jun2010_redist.exe",
+      "arguments": "",
+      "runAsAdmin": true,
+      "workingDirectory": "tools/addons/offline/DirectX"
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "type": "exe",
+      "relativePath": "tools/addons/offline/Canva/Canva.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/addons/offline/Canva"
+    },
+    {
+      "id": "chrome",
+      "name": "Chrome",
+      "type": "exe",
+      "relativePath": "tools/addons/offline/Chrome/ChromeStandaloneSetup64.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/addons/offline/Chrome"
+    },
+    {
+      "id": "firefox",
+      "name": "Firefox",
+      "type": "exe",
+      "relativePath": "tools/addons/offline/Firefox/Firefox Setup 153.0.4.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/addons/offline/Firefox"
+    },
+    {
+      "id": "vlc",
+      "name": "VLC",
+      "type": "exe",
+      "relativePath": "tools/addons/offline/VLC/VLC.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/addons/offline/VLC"
+    },
+    {
+      "id": "winrar",
+      "name": "WinRAR",
+      "type": "exe",
+      "relativePath": "tools/addons/offline/WinRAR/Winrar.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/addons/offline/WinRAR"
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "type": "exe",
+      "relativePath": "tools/addons/offline/Zoom/Zoom.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/addons/offline/Zoom"
+    },
+    {
+      "id": "teamviewer",
+      "name": "TeamViewer",
+      "type": "exe",
+      "relativePath": "tools/addons/offline/TeamViewer/TeamViewer.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/addons/offline/TeamViewer"
+    },
+    {
+      "id": "apps_online_launcher",
+      "name": "Apps Online Launcher",
+      "type": "exe",
+      "relativePath": "tools/addons/online/AppPack.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/addons/online"
+    },
+    {
+      "id": "office_setup",
+      "name": "Microsoft Office",
+      "type": "exe",
+      "relativePath": "tools/addons/Office/Setup.exe",
+      "arguments": "",
+      "runAsAdmin": true,
+      "workingDirectory": "tools/addons/Office"
+    },
+    {
+      "id": "ryota_quick",
+      "name": "RyotaQuick",
+      "type": "powershell",
+      "relativePath": "tools/RyotaQuick/RyotaQuick.ps1",
+      "arguments": "",
+      "runAsAdmin": true,
+      "workingDirectory": "tools/RyotaQuick"
+    },
+    {
+      "id": "ryota_quick_auto",
+      "name": "RyotaQuick (Run All)",
+      "type": "powershell",
+      "relativePath": "tools/RyotaQuick/RyotaQuick.ps1",
+      "arguments": "-AutoStart",
+      "runAsAdmin": true,
+      "workingDirectory": "tools/RyotaQuick"
+    },
+    {
+      "id": "dell_dell",
+      "name": "Dell Command Update",
+      "type": "exe",
+      "relativePath": "tools/dell/Dell-Command-Update-Windows-Universal-Application_P0P70_WIN64_5.7.1_A00.exe",
+      "arguments": "",
+      "runAsAdmin": true,
+      "workingDirectory": "tools/dell"
+    },
+    {
+      "id": "dell_netsdk",
+      "name": "NetSDK",
+      "type": "exe",
+      "relativePath": "tools/dell/dotnet-sdk-10.0.400-win-x64.exe",
+      "arguments": "",
+      "runAsAdmin": true,
+      "workingDirectory": "tools/dell"
+    },
+    {
+      "id": "driver_lenovo",
+      "name": "Lenovo",
+      "type": "exe",
+      "relativePath": "tools/lenovo/LenovoUpdate.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/lenovo"
+    },
+    {
+      "id": "driver_hp",
+      "name": "HP",
+      "type": "exe",
+      "relativePath": "tools/hp/HP.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/hp"
+    },
+    {
+      "id": "qc_cpu_test",
+      "name": "CPU Test",
+      "type": "exe",
+      "relativePath": "tools/qc/CPU Heavy Load/HeavyLoad-x64-Setup.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/qc/CPU Heavy Load"
+    },
+    {
+      "id": "qc_sentinel",
+      "name": "Sentinel",
+      "type": "exe",
+      "relativePath": "tools/qc/Hard Disk Sentinel/HDSentinel.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/qc/Hard Disk Sentinel"
+    },
+    {
+      "id": "qc_battery_health",
+      "name": "Battery Health",
+      "type": "exe",
+      "relativePath": "tools/qc/Battery/batteryinfo.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/qc/Battery"
+    },
+    {
+      "id": "qc_benchmark",
+      "name": "Benchmark",
+      "type": "exe",
+      "relativePath": "tools/qc/SSD Test Speed/CrystalDiskMark9_0_2.exe",
+      "arguments": "",
+      "runAsAdmin": false,
+      "workingDirectory": "tools/qc/SSD Test Speed"
+    }
+  ]
+}
