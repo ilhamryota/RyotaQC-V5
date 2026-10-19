@@ -1,0 +1,297 @@
+<C2RService version="1">
+  <AllowedCombinations>
+    <C2RSetupUniversal language="ar-sa" filename="Setup.ar-sa.exe" />
+    <C2RSetupUniversal language="bg-bg" filename="Setup.bg-bg.exe" />
+    <C2RSetupUniversal language="cs-cz" filename="Setup.cs-cz.exe" />
+    <C2RSetupUniversal language="da-dk" filename="Setup.da-dk.exe" />
+    <C2RSetupUniversal language="de-de" filename="Setup.de-de.exe" />
+    <C2RSetupUniversal language="el-gr" filename="Setup.el-gr.exe" />
+    <C2RSetupUniversal language="en-us" filename="Setup.en-us.exe" />
+    <C2RSetupUniversal language="en-gb" filename="Setup.en-gb.exe" />
+    <C2RSetupUniversal language="es-es" filename="Setup.es-es.exe" />
+    <C2RSetupUniversal language="es-mx" filename="Setup.es-mx.exe" />
+    <C2RSetupUniversal language="et-ee" filename="Setup.et-ee.exe" />
+    <C2RSetupUniversal language="fi-fi" filename="Setup.fi-fi.exe" />
+    <C2RSetupUniversal language="fr-ca" filename="Setup.fr-ca.exe" />
+    <C2RSetupUniversal language="fr-fr" filename="Setup.fr-fr.exe" />
+    <C2RSetupUniversal language="he-il" filename="Setup.he-il.exe" />
+    <C2RSetupUniversal language="hi-in" filename="Setup.hi-in.exe" />
+    <C2RSetupUniversal language="hr-hr" filename="Setup.hr-hr.exe" />
+    <C2RSetupUniversal language="hu-hu" filename="Setup.hu-hu.exe" />
+    <C2RSetupUniversal language="id-id" filename="Setup.id-id.exe" />
+    <C2RSetupUniversal language="it-it" filename="Setup.it-it.exe" />
+    <C2RSetupUniversal language="ja-jp" filename="Setup.ja-jp.exe" />
+    <C2RSetupUniversal language="kk-kz" filename="Setup.kk-kz.exe" />
+    <C2RSetupUniversal language="ko-kr" filename="Setup.ko-kr.exe" />
+    <C2RSetupUniversal language="lt-lt" filename="Setup.lt-lt.exe" />
+    <C2RSetupUniversal language="lv-lv" filename="Setup.lv-lv.exe" />
+    <C2RSetupUniversal language="ms-my" filename="Setup.ms-my.exe" />
+    <C2RSetupUniversal language="nb-no" filename="Setup.nb-no.exe" />
+    <C2RSetupUniversal language="nl-nl" filename="Setup.nl-nl.exe" />
+    <C2RSetupUniversal language="pl-pl" filename="Setup.pl-pl.exe" />
+    <C2RSetupUniversal language="pt-br" filename="Setup.pt-br.exe" />
+    <C2RSetupUniversal language="pt-pt" filename="Setup.pt-pt.exe" />
+    <C2RSetupUniversal language="ro-ro" filename="Setup.ro-ro.exe" />
+    <C2RSetupUniversal language="ru-ru" filename="Setup.ru-ru.exe" />
+    <C2RSetupUniversal language="sk-sk" filename="Setup.sk-sk.exe" />
+    <C2RSetupUniversal language="sl-si" filename="Setup.sl-si.exe" />
+    <C2RSetupUniversal language="sr-latn-rs" filename="Setup.sr-latn-rs.exe" />
+    <C2RSetupUniversal language="sv-se" filename="Setup.sv-se.exe" />
+    <C2RSetupUniversal language="th-th" filename="Setup.th-th.exe" />
+    <C2RSetupUniversal language="tr-tr" filename="Setup.tr-tr.exe" />
+    <C2RSetupUniversal language="uk-ua" filename="Setup.uk-ua.exe" />
+    <C2RSetupUniversal language="vi-vn" filename="Setup.vi-vn.exe" />
+    <C2RSetupUniversal language="zh-cn" filename="Setup.zh-cn.exe" />
+    <C2RSetupUniversal language="zh-tw" filename="Setup.zh-tw.exe" />
+    <C2RSetupUniversal language="af-za" filename="Setup.af-za.exe" />
+    <C2RSetupUniversal language="am-et" filename="Setup.am-et.exe" />
+    <C2RSetupUniversal language="as-in" filename="Setup.as-in.exe" />
+    <C2RSetupUniversal language="az-latn-az" filename="Setup.az-latn-az.exe" />
+    <C2RSetupUniversal language="be-by" filename="Setup.be-by.exe" />
+    <C2RSetupUniversal language="bn-bd" filename="Setup.bn-bd.exe" />
+    <C2RSetupUniversal language="bn-in" filename="Setup.bn-in.exe" />
+    <C2RSetupUniversal language="bs-latn-ba" filename="Setup.bs-latn-ba.exe" />
+    <C2RSetupUniversal language="ca-es" filename="Setup.ca-es.exe" />
+    <C2RSetupUniversal language="ca-es-valencia" filename="Setup.ca-es-valencia.exe" />
+    <C2RSetupUniversal language="cy-gb" filename="Setup.cy-gb.exe" />
+    <C2RSetupUniversal language="eu-es" filename="Setup.eu-es.exe" />
+    <C2RSetupUniversal language="fa-ir" filename="Setup.fa-ir.exe" />
+    <C2RSetupUniversal language="fil-ph" filename="Setup.fil-ph.exe" />
+    <C2RSetupUniversal language="ga-ie" filename="Setup.ga-ie.exe" />
+    <C2RSetupUniversal language="gd-gb" filename="Setup.gd-gb.exe" />
+    <C2RSetupUniversal language="gl-es" filename="Setup.gl-es.exe" />
+    <C2RSetupUniversal language="gu-in" filename="Setup.gu-in.exe" />
+    <C2RSetupUniversal language="ha-latn-ng" filename="Setup.ha-latn-ng.exe" />
+    <C2RSetupUniversal language="hy-am" filename="Setup.hy-am.exe" />
+    <C2RSetupUniversal language="ig-ng" filename="Setup.ig-ng.exe" />
+    <C2RSetupUniversal language="is-is" filename="Setup.is-is.exe" />
+    <C2RSetupUniversal language="ka-ge" filename="Setup.ka-ge.exe" />
+    <C2RSetupUniversal language="km-kh" filename="Setup.km-kh.exe" />
+    <C2RSetupUniversal language="kn-in" filename="Setup.kn-in.exe" />
+    <C2RSetupUniversal language="kok-in" filename="Setup.kok-in.exe" />
+    <C2RSetupUniversal language="ky-kg" filename="Setup.ky-kg.exe" />
+    <C2RSetupUniversal language="lb-lu" filename="Setup.lb-lu.exe" />
+    <C2RSetupUniversal language="mi-nz" filename="Setup.mi-nz.exe" />
+    <C2RSetupUniversal language="mk-mk" filename="Setup.mk-mk.exe" />
+    <C2RSetupUniversal language="ml-in" filename="Setup.ml-in.exe" />
+    <C2RSetupUniversal language="mn-mn" filename="Setup.mn-mn.exe" />
+    <C2RSetupUniversal language="mr-in" filename="Setup.mr-in.exe" />
+    <C2RSetupUniversal language="mt-mt" filename="Setup.mt-mt.exe" />
+    <C2RSetupUniversal language="ne-np" filename="Setup.ne-np.exe" />
+    <C2RSetupUniversal language="nn-no" filename="Setup.nn-no.exe" />
+    <C2RSetupUniversal language="nso-za" filename="Setup.nso-za.exe" />
+    <C2RSetupUniversal language="or-in" filename="Setup.or-in.exe" />
+    <C2RSetupUniversal language="pa-in" filename="Setup.pa-in.exe" />
+    <C2RSetupUniversal language="prs-af" filename="Setup.prs-af.exe" />
+    <C2RSetupUniversal language="ps-af" filename="Setup.ps-af.exe" />
+    <C2RSetupUniversal language="quz-pe" filename="Setup.quz-pe.exe" />
+    <C2RSetupUniversal language="rm-ch" filename="Setup.rm-ch.exe" />
+    <C2RSetupUniversal language="rw-rw" filename="Setup.rw-rw.exe" />
+    <C2RSetupUniversal language="sd-arab-pk" filename="Setup.sd-arab-pk.exe" />
+    <C2RSetupUniversal language="si-lk" filename="Setup.si-lk.exe" />
+    <C2RSetupUniversal language="sq-al" filename="Setup.sq-al.exe" />
+    <C2RSetupUniversal language="sr-cyrl-ba" filename="Setup.sr-cyrl-ba.exe" />
+    <C2RSetupUniversal language="sr-cyrl-rs" filename="Setup.sr-cyrl-rs.exe" />
+    <C2RSetupUniversal language="sw-ke" filename="Setup.sw-ke.exe" />
+    <C2RSetupUniversal language="ta-in" filename="Setup.ta-in.exe" />
+    <C2RSetupUniversal language="te-in" filename="Setup.te-in.exe" />
+    <C2RSetupUniversal language="tk-tm" filename="Setup.tk-tm.exe" />
+    <C2RSetupUniversal language="tn-za" filename="Setup.tn-za.exe" />
+    <C2RSetupUniversal language="tt-ru" filename="Setup.tt-ru.exe" />
+    <C2RSetupUniversal language="ug-cn" filename="Setup.ug-cn.exe" />
+    <C2RSetupUniversal language="ur-pk" filename="Setup.ur-pk.exe" />
+    <C2RSetupUniversal language="uz-latn-uz" filename="Setup.uz-latn-uz.exe" />
+    <C2RSetupUniversal language="wo-sn" filename="Setup.wo-sn.exe" />
+    <C2RSetupUniversal language="xh-za" filename="Setup.xh-za.exe" />
+    <C2RSetupUniversal language="yo-ng" filename="Setup.yo-ng.exe" />
+    <C2RSetupUniversal language="zu-za" filename="Setup.zu-za.exe" />
+    <PRId name="access2019retail" />
+    <PRId name="access2021retail" />
+    <PRId name="access2024retail" />
+    <PRId name="accessretail" />
+    <PRId name="accessruntime2019retail" />
+    <PRId name="accessruntimeretail" />
+    <PRId name="excel2019retail" />
+    <PRId name="excel2021retail" />
+    <PRId name="excel2024retail" />
+    <PRId name="excelretail" />
+    <PRId name="home2024retail" />
+    <PRId name="homebusiness2019retail" />
+    <PRId name="homebusiness2021retail" />
+    <PRId name="homebusiness2024retail" />
+    <PRId name="homebusinesspipcretail" />
+    <PRId name="homebusinessretail" />
+    <PRId name="homestudent2019retail" />
+    <PRId name="homestudent2021retail" />
+    <PRId name="homestudentretail" />
+    <PRId name="homestudentvnextretail" />
+    <PRId name="o365businessretail" />
+    <PRId name="o365educloudretail" />
+    <PRId name="o365homepremretail" />
+    <PRId name="o365proplusretail" />
+    <PRId name="o365smallbuspremretail" />
+    <PRId name="onenote2021retail" />
+    <PRId name="onenotefreeretail" />
+    <PRId name="onenoteretail" />
+    <PRId name="outlook2019retail" />
+    <PRId name="outlook2021retail" />
+    <PRId name="outlook2024retail" />
+    <PRId name="outlookretail" />
+    <PRId name="personal2019retail" />
+    <PRId name="personal2021retail" />
+    <PRId name="personalpipcretail" />
+    <PRId name="personalretail" />
+    <PRId name="powerpoint2019retail" />
+    <PRId name="powerpoint2021retail" />
+    <PRId name="powerpoint2024retail" />
+    <PRId name="powerpointretail" />
+    <PRId name="professional2019retail" />
+    <PRId name="professional2021retail" />
+    <PRId name="professional2024retail" />
+    <PRId name="professionalpipcretail" />
+    <PRId name="professionalretail" />
+    <PRId name="projectpro2019retail" />
+    <PRId name="projectpro2021retail" />
+    <PRId name="projectpro2024retail" />
+    <PRId name="projectproretail" />
+    <PRId name="projectstd2019retail" />
+    <PRId name="projectstd2021retail" />
+    <PRId name="projectstd2024retail" />
+    <PRId name="projectstdretail" />
+    <PRId name="proplus2019retail" />
+    <PRId name="proplus2021retail" />
+    <PRId name="proplus2024retail" />
+    <PRId name="proplusretail" />
+    <PRId name="publisher2019retail" />
+    <PRId name="publisher2021retail" />
+    <PRId name="publisherretail" />
+    <PRId name="skypeforbusiness2019retail" />
+    <PRId name="skypeforbusiness2021retail" />
+    <PRId name="skypeforbusinessentry2019retail" />
+    <PRId name="skypeforbusinessentryretail" />
+    <PRId name="skypeforbusinessretail" />
+    <PRId name="skypeservicebypassretail" />
+    <PRId name="standard2019retail" />
+    <PRId name="standard2021retail" />
+    <PRId name="standard2024retail" />
+    <PRId name="standardretail" />
+    <PRId name="visiopro2019retail" />
+    <PRId name="visiopro2021retail" />
+    <PRId name="visiopro2024retail" />
+    <PRId name="visioproretail" />
+    <PRId name="visiostd2019retail" />
+    <PRId name="visiostd2021retail" />
+    <PRId name="visiostd2024retail" />
+    <PRId name="visiostdretail" />
+    <PRId name="word2019retail" />
+    <PRId name="word2021retail" />
+    <PRId name="word2024retail" />
+    <PRId name="wordretail" />
+    <PRId name="languagepack" />
+    <Culture name="ar-sa" bootstrapper="True" lip="True" />
+    <Culture name="bg-bg" bootstrapper="True" lip="True" />
+    <Culture name="cs-cz" bootstrapper="True" lip="True" />
+    <Culture name="da-dk" bootstrapper="True" lip="True" />
+    <Culture name="de-de" bootstrapper="True" lip="True" />
+    <Culture name="el-gr" bootstrapper="True" lip="True" />
+    <Culture name="en-us" bootstrapper="True" lip="True" />
+    <Culture name="en-gb" bootstrapper="True" lip="True" />
+    <Culture name="es-es" bootstrapper="True" lip="True" />
+    <Culture name="es-mx" bootstrapper="True" lip="True" />
+    <Culture name="et-ee" bootstrapper="True" lip="True" />
+    <Culture name="fi-fi" bootstrapper="True" lip="True" />
+    <Culture name="fr-ca" bootstrapper="True" lip="True" />
+    <Culture name="fr-fr" bootstrapper="True" lip="True" />
+    <Culture name="he-il" bootstrapper="True" lip="True" />
+    <Culture name="hi-in" bootstrapper="True" lip="True" />
+    <Culture name="hr-hr" bootstrapper="True" lip="True" />
+    <Culture name="hu-hu" bootstrapper="True" lip="True" />
+    <Culture name="id-id" bootstrapper="True" lip="True" />
+    <Culture name="it-it" bootstrapper="True" lip="True" />
+    <Culture name="ja-jp" bootstrapper="True" lip="True" />
+    <Culture name="kk-kz" bootstrapper="True" lip="True" />
+    <Culture name="ko-kr" bootstrapper="True" lip="True" />
+    <Culture name="lt-lt" bootstrapper="True" lip="True" />
+    <Culture name="lv-lv" bootstrapper="True" lip="True" />
+    <Culture name="ms-my" bootstrapper="True" lip="True" />
+    <Culture name="nb-no" bootstrapper="True" lip="True" />
+    <Culture name="nl-nl" bootstrapper="True" lip="True" />
+    <Culture name="pl-pl" bootstrapper="True" lip="True" />
+    <Culture name="pt-br" bootstrapper="True" lip="True" />
+    <Culture name="pt-pt" bootstrapper="True" lip="True" />
+    <Culture name="ro-ro" bootstrapper="True" lip="True" />
+    <Culture name="ru-ru" bootstrapper="True" lip="True" />
+    <Culture name="sk-sk" bootstrapper="True" lip="True" />
+    <Culture name="sl-si" bootstrapper="True" lip="True" />
+    <Culture name="sr-latn-rs" bootstrapper="True" lip="True" />
+    <Culture name="sv-se" bootstrapper="True" lip="True" />
+    <Culture name="th-th" bootstrapper="True" lip="True" />
+    <Culture name="tr-tr" bootstrapper="True" lip="True" />
+    <Culture name="uk-ua" bootstrapper="True" lip="True" />
+    <Culture name="vi-vn" bootstrapper="True" lip="True" />
+    <Culture name="zh-cn" bootstrapper="True" lip="True" />
+    <Culture name="zh-tw" bootstrapper="True" lip="True" />
+    <Culture name="af-za" bootstrapper="False" lip="True" />
+    <Culture name="am-et" bootstrapper="False" lip="True" />
+    <Culture name="as-in" bootstrapper="False" lip="True" />
+    <Culture name="az-latn-az" bootstrapper="False" lip="True" />
+    <Culture name="be-by" bootstrapper="False" lip="True" />
+    <Culture name="bn-bd" bootstrapper="False" lip="True" />
+    <Culture name="bn-in" bootstrapper="False" lip="True" />
+    <Culture name="bs-latn-ba" bootstrapper="False" lip="True" />
+    <Culture name="ca-es" bootstrapper="False" lip="True" />
+    <Culture name="ca-es-valencia" bootstrapper="False" lip="True" />
+    <Culture name="cy-gb" bootstrapper="False" lip="True" />
+    <Culture name="eu-es" bootstrapper="False" lip="True" />
+    <Culture name="fa-ir" bootstrapper="False" lip="True" />
+    <Culture name="fil-ph" bootstrapper="False" lip="True" />
+    <Culture name="ga-ie" bootstrapper="False" lip="True" />
+    <Culture name="gd-gb" bootstrapper="False" lip="True" />
+    <Culture name="gl-es" bootstrapper="False" lip="True" />
+    <Culture name="gu-in" bootstrapper="False" lip="True" />
+    <Culture name="ha-latn-ng" bootstrapper="False" lip="True" />
+    <Culture name="hy-am" bootstrapper="False" lip="True" />
+    <Culture name="ig-ng" bootstrapper="False" lip="True" />
+    <Culture name="is-is" bootstrapper="False" lip="True" />
+    <Culture name="ka-ge" bootstrapper="False" lip="True" />
+    <Culture name="km-kh" bootstrapper="False" lip="True" />
+    <Culture name="kn-in" bootstrapper="False" lip="True" />
+    <Culture name="kok-in" bootstrapper="False" lip="True" />
+    <Culture name="ky-kg" bootstrapper="False" lip="True" />
+    <Culture name="lb-lu" bootstrapper="False" lip="True" />
+    <Culture name="mi-nz" bootstrapper="False" lip="True" />
+    <Culture name="mk-mk" bootstrapper="False" lip="True" />
+    <Culture name="ml-in" bootstrapper="False" lip="True" />
+    <Culture name="mn-mn" bootstrapper="False" lip="True" />
+    <Culture name="mr-in" bootstrapper="False" lip="True" />
+    <Culture name="mt-mt" bootstrapper="False" lip="True" />
+    <Culture name="ne-np" bootstrapper="False" lip="True" />
+    <Culture name="nn-no" bootstrapper="False" lip="True" />
+    <Culture name="nso-za" bootstrapper="False" lip="True" />
+    <Culture name="or-in" bootstrapper="False" lip="True" />
+    <Culture name="pa-in" bootstrapper="False" lip="True" />
+    <Culture name="prs-af" bootstrapper="False" lip="True" />
+    <Culture name="ps-af" bootstrapper="False" lip="True" />
+    <Culture name="quz-pe" bootstrapper="False" lip="True" />
+    <Culture name="rm-ch" bootstrapper="False" lip="True" />
+    <Culture name="rw-rw" bootstrapper="False" lip="True" />
+    <Culture name="sd-arab-pk" bootstrapper="False" lip="True" />
+    <Culture name="si-lk" bootstrapper="False" lip="True" />
+    <Culture name="sq-al" bootstrapper="False" lip="True" />
+    <Culture name="sr-cyrl-ba" bootstrapper="False" lip="True" />
+    <Culture name="sr-cyrl-rs" bootstrapper="False" lip="True" />
+    <Culture name="sw-ke" bootstrapper="False" lip="True" />
+    <Culture name="ta-in" bootstrapper="False" lip="True" />
+    <Culture name="te-in" bootstrapper="False" lip="True" />
+    <Culture name="tk-tm" bootstrapper="False" lip="True" />
+    <Culture name="tn-za" bootstrapper="False" lip="True" />
+    <Culture name="tt-ru" bootstrapper="False" lip="True" />
+    <Culture name="ug-cn" bootstrapper="False" lip="True" />
+    <Culture name="ur-pk" bootstrapper="False" lip="True" />
+    <Culture name="uz-latn-uz" bootstrapper="False" lip="True" />
+    <Culture name="wo-sn" bootstrapper="False" lip="True" />
+    <Culture name="xh-za" bootstrapper="False" lip="True" />
+    <Culture name="yo-ng" bootstrapper="False" lip="True" />
+    <Culture name="zu-za" bootstrapper="False" lip="True" />
+  </AllowedCombinations>
+</C2RService>
