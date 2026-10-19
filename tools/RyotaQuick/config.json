@@ -1,0 +1,83 @@
+{
+  "WifiProfiles": [
+    {
+      "SSID": "@WarehouseBest 5G",
+      "Password": "bestlaptop",
+      "Priority": 1
+    },
+    {
+      "SSID": "@WarehouseBest",
+      "Password": "bestlaptop",
+      "Priority": 2
+    }
+  ],
+  "EnablePartitioning": true,
+  "LargeDiskThresholdGB": 200,
+  "LargeDataPartitionGB": 100,
+  "SmallDiskThresholdGB": 100,
+  "SmallDataPartitionGB": 50,
+  "MinimumCFreeAfterPartitionGB": 35,
+  "PreferredDataDriveLetters": [
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z"
+  ],
+  "VendorOnlyDrivers": false,
+  "InstallSecurityUpdates": false,
+  "MaximumWindowsUpdatesPerPass": 100,
+  "IncludeFirmwareAndBIOS": true,
+  "RequireACForFirmware": true,
+  "MinimumBatteryPercentForFirmware": 40,
+  "DriverRetryCount": 3,
+  "OfficeTimeoutMinutes": 90,
+  "OfficeDetectTimeoutMinutes": 15,
+  "AppInstallerTimeoutMinutes": 45,
+  "AppOnlineTimeoutMinutes": 60,
+  "AppAutoSelectOnlineSeconds": 20,
+  "AppInstallMethod": "OnlineOnly",
+  "VendorToolUrls": {
+    "Lenovo": ["https://download.lenovo.com/pccbbs/thinkvantage_en/system_update_5.08.03.59.exe"],
+    "Dell": ["https://dl.dell.com/FOLDER12584397M/1/Dell-Command-Update-Application-for-Windows-10-11_5.4.0_A00.exe", "https://dl.dell.com/FOLDER12584397M/1/Dell-Command-Update-Windows10-11_5.4.0_A00.exe"],
+    "HP": ["https://ftp.hp.com/pub/softpaq/sp142501-143000/sp142755.exe", "https://hpia.hpcloud.hp.com/downloads/hpia/hp-hpia-5.3.6.exe"]
+  },
+  "OpenInitialReport": false,
+  "OpenFinalReport": true,
+  "AutoRebootAtEnd": false,
+  "ManualMode": true,
+  "AllowParallelSteps": false,
+  "MaxParallelSteps": 1,
+  "LiveLogMaxLines": 2000,
+  "DefaultWallpaper": "sml1.png",
+  "StepTimeouts": {
+    "1": 5,
+    "2": 10,
+    "3": 3,
+    "4": 10,
+    "5": 120,
+    "6": 90,
+    "7": 60,
+    "8": 5
+  },
+  "ResumeTaskName": "RyotaQuick-Resume",
+  "ResumeDelaySeconds": 60
+}
